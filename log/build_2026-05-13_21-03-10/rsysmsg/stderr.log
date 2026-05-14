@@ -1,0 +1,32 @@
+In file included from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__functions.h:19[m[K,
+                 from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c:4[m[K:
+[01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Krsysmsg/msg/detail/string__struct.h: No such file or directory
+   22 | #include [01;31m[K"rsysmsg/msg/detail/string__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make:105: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/rsysmsg__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp:7[m[K:
+[01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_cpp/rsysmsg/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krsysmsg/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"rsysmsg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.cpp:12[m[K:
+[01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_cpp/rsysmsg/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krsysmsg/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"rsysmsg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make:91: CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+In file included from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/name__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.cpp:4[m[K:
+[01m[K/home/rai-m/robosys/build/rsysmsg/rosidl_generator_cpp/rsysmsg/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krsysmsg/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"rsysmsg/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+[console_scripts]
+fightSv = fight.fightServer:main
+fighter = fight.fighter:main
+

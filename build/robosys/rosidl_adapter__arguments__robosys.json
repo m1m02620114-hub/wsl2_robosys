@@ -1,0 +1,6 @@
+{
+  "package_name": "robosys",
+  "non_idl_tuples": [
+    "/home/rai-m/robosys/src/robosys:srv/Name.srv"
+  ]
+}

@@ -1,0 +1,13 @@
+[  3%] [32mBuilding C object CMakeFiles/robosys__rosidl_generator_c.dir/rosidl_generator_c/robosys/srv/detail/name__functions.c.o[0m
+[  6%] Built target robosys__cpp
+[  6%] Built target ament_cmake_python_copy_robosys
+[  9%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robosys/srv/name__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robosys/srv/detail/name__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robosys/srv/detail/dds_fastrtps/name__type_support.cpp.o[0m
+running egg_info
+writing robosys.egg-info/PKG-INFO
+writing dependency_links to robosys.egg-info/dependency_links.txt
+writing top-level names to robosys.egg-info/top_level.txt
+reading manifest file 'robosys.egg-info/SOURCES.txt'
+writing manifest file 'robosys.egg-info/SOURCES.txt'
+[ 16%] Built target ament_cmake_python_build_robosys_egg

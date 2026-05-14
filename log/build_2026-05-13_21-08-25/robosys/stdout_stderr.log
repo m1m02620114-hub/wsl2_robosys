@@ -1,0 +1,45 @@
+[  3%] [32mBuilding C object CMakeFiles/robosys__rosidl_generator_c.dir/rosidl_generator_c/robosys/srv/detail/name__functions.c.o[0m
+[  6%] Built target robosys__cpp
+[  6%] Built target ament_cmake_python_copy_robosys
+In file included from [01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_c/robosys/srv/detail/name__functions.h:19[m[K,
+                 from [01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_c/robosys/srv/detail/name__functions.c:4[m[K:
+[01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_c/robosys/srv/detail/name__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Krobosys/msg/detail/string__struct.h: No such file or directory
+   22 | #include [01;31m[K"robosys/msg/detail/string__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robosys__rosidl_generator_c.dir/build.make:105: CMakeFiles/robosys__rosidl_generator_c.dir/rosidl_generator_c/robosys/srv/detail/name__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/robosys__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  9%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robosys/srv/name__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robosys/srv/detail/name__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/robosys__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robosys/srv/detail/dds_fastrtps/name__type_support.cpp.o[0m
+In file included from [01m[K/home/rai-m/robosys/build/robosys/rosidl_typesupport_fastrtps_cpp/robosys/srv/detail/name__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/rai-m/robosys/build/robosys/rosidl_typesupport_fastrtps_cpp/robosys/srv/detail/dds_fastrtps/name__type_support.cpp:4[m[K:
+[01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_cpp/robosys/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobosys/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"robosys/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robosys__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/robosys__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robosys/srv/detail/dds_fastrtps/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/robosys__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+In file included from [01m[K/home/rai-m/robosys/build/robosys/rosidl_typesupport_cpp/robosys/srv/name__type_support.cpp:7[m[K:
+[01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_cpp/robosys/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobosys/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"robosys/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robosys__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/robosys__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robosys/srv/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/robosys__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from [01m[K/home/rai-m/robosys/build/robosys/rosidl_typesupport_introspection_cpp/robosys/srv/detail/name__type_support.cpp:12[m[K:
+[01m[K/home/rai-m/robosys/build/robosys/rosidl_generator_cpp/robosys/srv/detail/name__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobosys/msg/detail/string__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"robosys/msg/detail/string__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robosys__rosidl_typesupport_introspection_cpp.dir/build.make:91: CMakeFiles/robosys__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robosys/srv/detail/name__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/robosys__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+running egg_info
+writing robosys.egg-info/PKG-INFO
+writing dependency_links to robosys.egg-info/dependency_links.txt
+writing top-level names to robosys.egg-info/top_level.txt
+reading manifest file 'robosys.egg-info/SOURCES.txt'
+writing manifest file 'robosys.egg-info/SOURCES.txt'
+[ 16%] Built target ament_cmake_python_build_robosys_egg
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robosys/srv/Name.srv
+// generated code does not contain a copyright notice
+
+#include "robosys/msg/String.idl"
+
+module robosys {
+  module srv {
+    struct Name_Request {
+      robosys::msg::String name;
+    };
+    struct Name_Response {
+      robosys::msg::String response;
+    };
+  };
+};

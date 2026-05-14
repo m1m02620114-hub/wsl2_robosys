@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rsysmsg/srv/Name.srv
+// generated code does not contain a copyright notice
+
+
+module rsysmsg {
+  module srv {
+    struct Name_Request {
+      string name;
+    };
+    struct Name_Response {
+      string response;
+    };
+  };
+};

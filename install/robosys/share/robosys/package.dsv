@@ -1,0 +1,5 @@
+source;share/robosys/local_setup.bash
+source;share/robosys/local_setup.dsv
+source;share/robosys/local_setup.ps1
+source;share/robosys/local_setup.sh
+source;share/robosys/local_setup.zsh

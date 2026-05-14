@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robosys__py",
+		"source" : "/home/rai-m/robosys/build/robosys/robosys__py"
+	}
+}

@@ -1,0 +1,10 @@
+  File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighter.py", line 21
+    class 
+          ^
+SyntaxError: invalid syntax
+
+  File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/class001.py", line 2
+    def __init__(self, Pname, Pnum, monsters, Php, Pspeed, Pattack, Pdefense)
+                                                                             ^
+SyntaxError: expected ':'
+

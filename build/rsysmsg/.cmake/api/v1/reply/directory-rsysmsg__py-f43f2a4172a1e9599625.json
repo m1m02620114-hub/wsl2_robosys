@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rsysmsg__py",
+		"source" : "/home/rai-m/robosys/build/rsysmsg/rsysmsg__py"
+	}
+}

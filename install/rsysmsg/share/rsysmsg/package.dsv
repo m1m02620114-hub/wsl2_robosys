@@ -1,0 +1,11 @@
+source;share/rsysmsg/hook/cmake_prefix_path.ps1
+source;share/rsysmsg/hook/cmake_prefix_path.dsv
+source;share/rsysmsg/hook/cmake_prefix_path.sh
+source;share/rsysmsg/hook/ld_library_path_lib.ps1
+source;share/rsysmsg/hook/ld_library_path_lib.dsv
+source;share/rsysmsg/hook/ld_library_path_lib.sh
+source;share/rsysmsg/local_setup.bash
+source;share/rsysmsg/local_setup.dsv
+source;share/rsysmsg/local_setup.ps1
+source;share/rsysmsg/local_setup.sh
+source;share/rsysmsg/local_setup.zsh

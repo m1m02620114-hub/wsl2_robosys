@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6f13857c217f60a60104.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "robosys__py",
+					"jsonFile" : "directory-robosys__py-9667bf2417c13fec600c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rai-m/robosys/build/robosys/robosys__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "robosys",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robosys_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robosys_egg-74101f6131cf2e7d37d9.json",
+					"name" : "ament_cmake_python_build_robosys_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_robosys::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_robosys-c1b0a82ab26069023bd8.json",
+					"name" : "ament_cmake_python_copy_robosys",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys-afa8497c0734110ea691.json",
+					"name" : "robosys",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__cpp-88c6e46f6c3482e03d64.json",
+					"name" : "robosys__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robosys__py::@2ac54bbf5f70b16c966e",
+					"jsonFile" : "target-robosys__py-ea70a0625f32ccead20f.json",
+					"name" : "robosys__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_generator_c-9d42189910af7c45211c.json",
+					"name" : "robosys__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_generator_py-5453f08e66d43d9f43cc.json",
+					"name" : "robosys__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_c-9a7dff3c14a80b614cc5.json",
+					"name" : "robosys__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_c__pyext-ffcccee2c1bf3b07d30f.json",
+					"name" : "robosys__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_cpp-eae275eed02cb88c233f.json",
+					"name" : "robosys__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_fastrtps_c-d5fa561e198b4082359b.json",
+					"name" : "robosys__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_fastrtps_c__pyext-0aa07fa0c5f03a7da3f8.json",
+					"name" : "robosys__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_fastrtps_cpp-9a66f9164c42e25b4990.json",
+					"name" : "robosys__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_introspection_c-8258b70b6384d73596a9.json",
+					"name" : "robosys__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_introspection_c__pyext-1b224d6ae5449c44f1e4.json",
+					"name" : "robosys__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys__rosidl_typesupport_introspection_cpp-d1bcb0443f007cfc652f.json",
+					"name" : "robosys__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robosys_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robosys_uninstall-698bb8a7546388754519.json",
+					"name" : "robosys_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d354aa1ffeebadd1f321.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rai-m/robosys/build/robosys",
+		"source" : "/home/rai-m/robosys/src/robosys"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
