@@ -10,21 +10,25 @@ class Player:
         self.flg = 0
 
     def dead(self):
-        return Php <= 0
-    
-    def speed(self):
-        field.speeds[Pnum] = self.Pspeed
+        return self.Php <= 0
+
+    def speed(self, field):
+        field.speeds[self.Pnum] = self.Pspeed
+
 
     def hp(self, field):
-        field.hps[Pnum] = self.Php
+        field.hps[self.Pnum] = self.Php
+  
 
     def attack(self, field):
         field.attacksP[self.Pnum] = field.attacks[self.Pnum]
         field.attacks[self.Pnum] = self.Pattack
+  
 
     def defense(self, field):
         field.defensesP[self.Pnum] = field.defenses[self.Pnum]
         field.defenses[self.Pnum] = self.Pdefense
+  
 
 class Field:
     def __init__(self, attacks, attacksP, defenses, defensesP, speeds, hps):
@@ -36,8 +40,8 @@ class Field:
         self.hps
         self.hpsF = [0, 0]
 
-    def battle(self, P1, P2):
-        if self.speeds[0] >= self.speed[1]:
+    def battle(self):
+        if self.speeds[0] >= self.speeds[1]:
             F = 0
             S = 1
         else:
@@ -49,4 +53,12 @@ class Field:
             self.hps[S] = self.hpsF[S]
         else:
             print("no damage")
-        if 
+        if self.hps[S] <= 0:
+            return 0
+        
+        self.hpsF[F] = self.hps[F] + self.defensesP[F] - self.attacks[S]
+        if self.hpsF[F] < self.hps[F]:
+            self.hps[F] = self.hpsF[F]
+        else:
+            print("no damage")
+        return 0
