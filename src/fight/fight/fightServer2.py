@@ -69,7 +69,9 @@ class FighterServer(Node):
         self.get_logger().info('フィードバック受信')
 
 
-
+#トピック通信用関数
+プレイヤーのIDが登録されていなければスキップする. 登録されていればそのプレイヤーがモンスターを選択できるように
+アクション通信クライアントを起動する. 
     def monsterCb(self, msg):
         self.get_logger().info('プレイヤー %s からモンスター選択のリクエストを受け取りました. ', msg.ID)
         if msg.ID == 2:
@@ -77,6 +79,7 @@ class FighterServer(Node):
             return 0
         else:
             self.monster_select_ID = msg.ID
+            self.pre_monsters[self.monster_select_ID] = [0, 0, 0] #プレイヤーの登録用リストを初期化
             self.monsterAction()
 
     def monsterSelect(self, order):
