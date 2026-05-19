@@ -23,10 +23,16 @@ class FighterServer(Node):
         self.order = [0, 0]
         self.subscription_monster = self.create_subscription(Num, 'monster_select', self.monsterCb, 10)
         self.monster_select_ID = 2
-        self.pre_monster = [0, 0, 0]
+        self.pre_monsters = [[0, 0, 0], [0, 0, 0]]
         self.action_client_monster_0 = ActionClient(self, Monster, 'monster_action_0')
         self.action_client_monster_1 = ActionClient(self, Monster, 'monster_action_1')
 
+############################################################################################################
+# モンスター選択用トピック＆アクション通信関数
+# トピック通信でモンスターを選択したいプレイヤーのメッセージを受け取り, 受け取り次第そのプレイヤーにアクション通信で
+# モンスターを選択するように指示を出す. プレイヤーが選択したときにフィードバックで逐次選択状況を受け取りリストを更新する. 
+# 選択はモンスター登録と取り消しができる. クライアントから選択完了のメッセージを受け取ったら出来上がったリストを元に
+# プレイヤーのモンスターを登録する. 
     def monsterAction(self):
         goal_msg = Monster.Goal()
             goal_msg.order = '受け取った. '
@@ -56,9 +62,9 @@ class FighterServer(Node):
         monster = feedback_msg.monster
         num = feedback_msg.fbnum
         if monster == 'back':
-            self.pre_monster[num-1] = 0
+            self.pre_monsters[monster_select_ID][num-1] = 0
         else:
-            self.pre_monster[num] = monster
+            self.pre_monster[monster_select_ID][num] = monster
 
         self.get_logger().info('フィードバック受信')
 
@@ -76,6 +82,14 @@ class FighterServer(Node):
     def monsterSelect(self, order):
         goal_msg = Monster.Goal()
 
+# モンスター選択用アクション通信関数
+######################################################################################################
+
+
+# 指示受け取りサービス通信関数
+# プレイヤーからの指令を受け取ったときにプレイヤー1かプレイヤー2どちらの指令なのかを判定し, 
+# そのプレイヤーの指示通りにfieldの攻撃力や防御力を更新する. もしゲームが開始していなければ
+# 受付できないことをメッセージで返す. 
     def fightingSrvCb(self, request, response):
         self.get_logger().info("プレイヤー %s から指示を受け取りました. ", request.ID)
         if self.startflg != 1:
@@ -84,6 +98,10 @@ class FighterServer(Node):
             return response
         if request.ID == 1:
             
+
+# 準備完了状況に応じてゲームを開始するか否かを判定するためのサービス通信関数
+# 両方準備完了していればfieldにプレイヤーの初期HPとスピードを反映しfightingSrvCbを受付できるようにする
+# 準備完了していなければその旨のメッセージを返す.
     def startSrvCb(self, request, response):
         if self.ready != [1, 1]:
             response.reID = request.ID
@@ -97,6 +115,11 @@ class FighterServer(Node):
             response.res = "ゲームが開始されました. "
             return response
 
+
+# プレイヤーの準備完了メッセージを受け取り判定するためのサービス通信関数
+# プレイヤーの準備完了メッセージを受け取ったときに, そのプレイヤーが名前と使用モンスターを登録しているかどうか
+# を確認し, 状況に応じてメッセージを返す. 自分だけが完了していた場合は相手の完了を待つ旨のメッセージを送り, 
+# 相手も準備が完了していれば開始できる旨のメッセージを返す. 
     def readySrvCb(self, request, response):
         self.get_logger().info("プレイヤー %s から準備完了のリクエストを受け取りました. ", request.ID)
         if request.ID == 2:
@@ -125,7 +148,10 @@ class FighterServer(Node):
             response.res = "両方のプレイヤーが準備完了しました. startでゲームを開始できます. "
             return response
     
-
+# プレイヤーネーム登録用サービス通信関数
+# プレイヤーがもう登録されているか, 登録しようとするプレイヤーネームがすでに使用されているのかを判定し登録処理を行う.
+# クライアント側には登録できたら何番目のプレイヤーとして登録されたかをメッセージとIDで返し, 
+# 登録できなかったときはその理由を示したメッセージを返す. 
     def nameSrvCb(self, request, response):
         self.get_logger().info("クライアントからプレイヤーネームのリクエストを受け取りました. ")
 
