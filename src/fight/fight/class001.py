@@ -12,6 +12,9 @@ class Player:
     def dead(self):
         return self.Php <= 0
 
+    def defeat(self):
+        return self.flg >= 3
+
     def speed(self, field):
         field.speeds[self.Pnum] = self.Pspeed
 
@@ -61,4 +64,5 @@ class Field:
             self.hps[F] = self.hpsF[F]
         else:
             print("no damage")
+            
         return 0
