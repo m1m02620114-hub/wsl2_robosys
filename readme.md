@@ -23,3 +23,14 @@
 モンスターをあらかじめ作っていたリストと照らし合わせて当てはめる  
 基本的にサーバ側（クライアントモジュール）で1番目のモンスター選択のときにbackしないように
 するとか4番目のモンスターを追加しないようにするとかの処理をする
+
+コマンド
+# WSL2側でビルド後
+colcon build --packages-select fight
+source install/setup.bash
+
+# サーバ起動 (別ターミナル)
+ros2 run fight fightSv
+
+# GUI起動
+ros2 run fight fightGui
