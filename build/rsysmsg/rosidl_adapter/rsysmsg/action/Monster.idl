@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from rsysmsg/action/Monster.action
+// generated code does not contain a copyright notice
+
+
+module rsysmsg {
+  module action {
+    struct Monster_Goal {
+      string order;
+    };
+    struct Monster_Result {
+      int32 result;
+    };
+    struct Monster_Feedback {
+      int32 feedback;
+    };
+  };
+};

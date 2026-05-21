@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rsysmsg__cpp"
+  "rosidl_generator_cpp/rsysmsg/action/detail/monster__builder.hpp"
+  "rosidl_generator_cpp/rsysmsg/action/detail/monster__struct.hpp"
+  "rosidl_generator_cpp/rsysmsg/action/detail/monster__traits.hpp"
+  "rosidl_generator_cpp/rsysmsg/action/detail/monster__type_support.hpp"
+  "rosidl_generator_cpp/rsysmsg/action/monster.hpp"
   "rosidl_generator_cpp/rsysmsg/msg/detail/num__builder.hpp"
   "rosidl_generator_cpp/rsysmsg/msg/detail/num__struct.hpp"
   "rosidl_generator_cpp/rsysmsg/msg/detail/num__traits.hpp"
