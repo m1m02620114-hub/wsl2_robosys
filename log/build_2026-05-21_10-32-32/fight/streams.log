@@ -1,0 +1,31 @@
+[1.150s] Invoking command in '/home/rai-m/robosys/src/fight': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
+[1.458s] running egg_info
+[1.458s] writing ../../build/fight/fight.egg-info/PKG-INFO
+[1.459s] writing dependency_links to ../../build/fight/fight.egg-info/dependency_links.txt
+[1.459s] writing entry points to ../../build/fight/fight.egg-info/entry_points.txt
+[1.459s] writing requirements to ../../build/fight/fight.egg-info/requires.txt
+[1.460s] writing top-level names to ../../build/fight/fight.egg-info/top_level.txt
+[1.461s] reading manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.462s] adding license file 'LICENSE'
+[1.462s] writing manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.463s] running build
+[1.463s] running build_py
+[1.463s] copying fight/fightClient.py -> /home/rai-m/robosys/build/fight/build/lib/fight
+[1.464s] running install
+[1.464s] running install_lib
+[1.464s] copying /home/rai-m/robosys/build/fight/build/lib/fight/fightClient.py -> /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight
+[1.465s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightServer2.py to fightServer2.cpython-310.pyc
+[1.467s] Sorry: IndentationError: expected an indented block after 'if' statement on line 116 (fightServer2.py, line 122)
+[1.468s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightClient.py to fightClient.cpython-310.pyc
+[1.474s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighterClient.py to fighterClient.cpython-310.pyc
+[1.474s] running install_data
+[1.474s] running install_egg_info
+[1.479s] removing '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info' (and everything under it)
+[1.479s] Copying ../../build/fight/fight.egg-info to /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info
+[1.480s] running install_scripts
+[1.480s] Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)
+[1.500s] Installing fightCli script to /home/rai-m/robosys/install/fight/lib/fight
+[1.501s] Installing fightGui script to /home/rai-m/robosys/install/fight/lib/fight
+[1.501s] Installing fightSv script to /home/rai-m/robosys/install/fight/lib/fight
+[1.501s] writing list of installed files to '/home/rai-m/robosys/build/fight/install.log'
+[1.528s] Invoked command in '/home/rai-m/robosys/src/fight' returned '0': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data

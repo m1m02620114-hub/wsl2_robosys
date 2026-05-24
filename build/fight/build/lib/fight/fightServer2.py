@@ -8,6 +8,13 @@ from rsysmsg.msg import Num
 from rsysmsg.srv import Fight
 from rsysmsg.action import Monster
 
+A = {"hp": 50, "speed": 5, "attack": 10, "defense": 10}
+B = {"hp": 50, "speed": 5, "attack": 10, "defense": 10}
+C = {"hp": 50, "speed": 5, "attack": 10, "defense": 10}
+D = {"hp": 50, "speed": 5, "attack": 10, "defense": 10}
+E = {"hp": 50, "speed": 5, "attack": 10, "defense": 10}
+
+
 
 class FighterServer(Node):
 
@@ -35,7 +42,7 @@ class FighterServer(Node):
 # プレイヤーのモンスターを登録する. 
     def monsterAction(self):
         goal_msg = Monster.Goal()
-            goal_msg.order = 'モンスターセレクトのリクエストを受け付けました. '
+        goal_msg.order = 'モンスターセレクトのリクエストを受け付けました. '
         if self.monster_select_ID == 0:
             if not self.action_client_monster_0.wait_for_server():
                 self.get_logger().info('クライアントが見つかりませんでした. ')
@@ -89,8 +96,8 @@ class FighterServer(Node):
             self.monster_select_ID = msg.ID
             self.monsterAction()
 
-    def monsterSelect(self, order):
-        goal_msg = Monster.Goal()
+    # def monsterSelect(self, order):
+    #     goal_msg = Monster.Goal()
 
 # モンスター選択用アクション通信関数
 ######################################################################################################
@@ -107,6 +114,7 @@ class FighterServer(Node):
             response.res = "ゲームが開始していないため, 指示を受付できません. "
             return response
         if request.ID == 1:
+            print("aaaa")
             
 
 # 準備完了状況に応じてゲームを開始するか否かを判定するためのサービス通信関数

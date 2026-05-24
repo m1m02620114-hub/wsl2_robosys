@@ -4,6 +4,8 @@ rsysmsg.egg-info/PKG-INFO
 rsysmsg.egg-info/SOURCES.txt
 rsysmsg.egg-info/dependency_links.txt
 rsysmsg.egg-info/top_level.txt
+rsysmsg/action/__init__.py
+rsysmsg/action/_monster.py
 rsysmsg/msg/__init__.py
 rsysmsg/msg/_num.py
 rsysmsg/srv/__init__.py

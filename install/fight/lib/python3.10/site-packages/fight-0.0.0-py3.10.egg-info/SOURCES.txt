@@ -11,10 +11,12 @@ setup.py
 ../../build/fight/fight.egg-info/zip-safe
 fight/__init__.py
 fight/class001.py
+fight/fightClient.py
 fight/fightServer.py
 fight/fightServer2.py
 fight/fighter.py
 fight/fighterClient.py
+fight/game_gui.py
 fight/monster.py
 resource/fight
 test/test_copyright.py

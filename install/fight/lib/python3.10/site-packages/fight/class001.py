@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, Pname, Pnum, monsters, Php, Pspeed, Pattack, Pdefense)
+    def __init__(self, Pname, Pnum, monsters, Php, Pspeed, Pattack, Pdefense):
         self.Pname = Pname
         self.Pnum = Pnum
         self.monsters = monsters

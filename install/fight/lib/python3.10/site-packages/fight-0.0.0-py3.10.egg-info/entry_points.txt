@@ -1,4 +1,5 @@
 [console_scripts]
+fightCli = fight.fightClient:main
+fightGui = fight.game_gui:main
 fightSv = fight.fightServer:main
-fighter = fight.fighter:main
 

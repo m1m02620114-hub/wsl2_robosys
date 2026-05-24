@@ -1,0 +1,7 @@
+Sorry: IndentationError: expected an indented block after 'if' statement on line 109 (fightServer2.py, line 115)
+Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)
+  File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighter.py", line 21
+    class 
+          ^
+SyntaxError: invalid syntax
+

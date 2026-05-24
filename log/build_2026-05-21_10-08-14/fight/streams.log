@@ -1,0 +1,37 @@
+[0.981s] Invoking command in '/home/rai-m/robosys/src/fight': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
+[1.251s] running egg_info
+[1.253s] writing ../../build/fight/fight.egg-info/PKG-INFO
+[1.253s] writing dependency_links to ../../build/fight/fight.egg-info/dependency_links.txt
+[1.254s] writing entry points to ../../build/fight/fight.egg-info/entry_points.txt
+[1.254s] writing requirements to ../../build/fight/fight.egg-info/requires.txt
+[1.256s] writing top-level names to ../../build/fight/fight.egg-info/top_level.txt
+[1.257s] reading manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.257s] adding license file 'LICENSE'
+[1.259s] writing manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.260s] running build
+[1.260s] running build_py
+[1.260s] copying fight/game_gui.py -> /home/rai-m/robosys/build/fight/build/lib/fight
+[1.260s] running install
+[1.261s] running install_lib
+[1.261s] copying /home/rai-m/robosys/build/fight/build/lib/fight/game_gui.py -> /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight
+[1.261s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightServer2.py to fightServer2.cpython-310.pyc
+[1.270s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighterClient.py to fighterClient.cpython-310.pyc
+[1.270s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighter.py to fighter.cpython-310.pyc
+[1.270s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/game_gui.py to game_gui.cpython-310.pyc
+[1.281s] running install_data
+[1.281s] running install_egg_info
+[1.281s] removing '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info' (and everything under it)
+[1.281s] Copying ../../build/fight/fight.egg-info to /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info
+[1.281s] running install_scripts
+[1.281s] Sorry: IndentationError: expected an indented block after 'if' statement on line 109 (fightServer2.py, line 115)
+[1.281s] Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)
+[1.281s]   File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighter.py", line 21
+[1.281s]     class 
+[1.281s]           ^
+[1.281s] SyntaxError: invalid syntax
+[1.281s] 
+[1.320s] Installing fightCli script to /home/rai-m/robosys/install/fight/lib/fight
+[1.322s] Installing fightGui script to /home/rai-m/robosys/install/fight/lib/fight
+[1.322s] Installing fightSv script to /home/rai-m/robosys/install/fight/lib/fight
+[1.323s] writing list of installed files to '/home/rai-m/robosys/build/fight/install.log'
+[1.348s] Invoked command in '/home/rai-m/robosys/src/fight' returned '0': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data

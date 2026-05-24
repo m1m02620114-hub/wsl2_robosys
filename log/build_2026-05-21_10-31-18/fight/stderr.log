@@ -1,0 +1,2 @@
+Sorry: IndentationError: expected an indented block after 'if' statement on line 116 (fightServer2.py, line 122)
+Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)

@@ -18,7 +18,7 @@ class nameCl(Node):
         msg.data = input()
         self.pubname.publish(msg)
 
-class 
+# class 
 
 
 

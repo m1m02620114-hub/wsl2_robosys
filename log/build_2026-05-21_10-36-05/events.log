@@ -1,0 +1,277 @@
+[0.000000] (-) TimerEvent: {}
+[0.000611] (rsysmsg) JobQueued: {'identifier': 'rsysmsg', 'dependencies': OrderedDict()}
+[0.000711] (fight) JobQueued: {'identifier': 'fight', 'dependencies': OrderedDict([('rsysmsg', '/home/rai-m/robosys/install/rsysmsg')])}
+[0.000739] (rsysmsg) JobStarted: {'identifier': 'rsysmsg'}
+[0.013880] (rsysmsg) JobProgress: {'identifier': 'rsysmsg', 'progress': 'cmake'}
+[0.015453] (rsysmsg) JobProgress: {'identifier': 'rsysmsg', 'progress': 'build'}
+[0.016334] (rsysmsg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rai-m/robosys/build/rsysmsg', '--', '-j22', '-l22'], 'cwd': '/home/rai-m/robosys/build/rsysmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rai-m'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rai-m/robosys/install/rsysmsg/lib:/home/rai-m/test1_ws/install/robo_msg/lib:/home/rai-m/test1_ws/install/robo1_msg/lib:/home/rai-m/test1_ws/install/multi01_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/rai-m'), ('OLDPWD', '/home/rai-m'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rai-m/robosys/install:/home/rai-m/mlr01_ws/install:/home/rai-m/test1_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rai-m'), ('NAME', 'DESKTOP-0RGJIHD'), ('WSL_INTEROP', '/run/WSL/17211_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/rai-m/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rai-m/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Program Files (x86)/mingw64/bin:/snap/bin'), ('WT_SESSION', '041520b8-0215-4b85-835c-7479a7e45f89'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rai-m/robosys/install/fight:/home/rai-m/robosys/install/rsysmsg:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01_msg:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_DOMEIN_ID', '25'), ('PWD', '/home/rai-m/robosys/build/rsysmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages:/home/rai-m/mlr01_ws/install/lp01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo02/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo1_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/py_pubsub/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package2/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/multi01_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/multi01/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/rai-m/robosys/install/rsysmsg:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/multi01_msg:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.090684] (rsysmsg) StdoutLine: {'line': b'[  2%] Built target rsysmsg__cpp\n'}
+[0.096308] (-) TimerEvent: {}
+[0.097695] (rsysmsg) StdoutLine: {'line': b'[ 12%] Built target rsysmsg__rosidl_generator_c\n'}
+[0.114992] (rsysmsg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_rsysmsg\n'}
+[0.128546] (rsysmsg) StdoutLine: {'line': b'[ 23%] Built target rsysmsg__rosidl_typesupport_introspection_cpp\n'}
+[0.129068] (rsysmsg) StdoutLine: {'line': b'[ 34%] Built target rsysmsg__rosidl_typesupport_introspection_c\n'}
+[0.130555] (rsysmsg) StdoutLine: {'line': b'[ 44%] Built target rsysmsg__rosidl_typesupport_cpp\n'}
+[0.132435] (rsysmsg) StdoutLine: {'line': b'[ 55%] Built target rsysmsg__rosidl_typesupport_c\n'}
+[0.134358] (rsysmsg) StdoutLine: {'line': b'[ 65%] Built target rsysmsg__rosidl_typesupport_fastrtps_c\n'}
+[0.136101] (rsysmsg) StdoutLine: {'line': b'[ 76%] Built target rsysmsg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.159793] (rsysmsg) StdoutLine: {'line': b'[ 76%] Built target rsysmsg\n'}
+[0.187832] (rsysmsg) StdoutLine: {'line': b'[ 78%] Built target rsysmsg__py\n'}
+[0.196673] (-) TimerEvent: {}
+[0.215968] (rsysmsg) StdoutLine: {'line': b'[ 87%] Built target rsysmsg__rosidl_generator_py\n'}
+[0.243707] (rsysmsg) StdoutLine: {'line': b'[100%] Built target rsysmsg__rosidl_typesupport_c__pyext\n'}
+[0.244428] (rsysmsg) StdoutLine: {'line': b'[100%] Built target rsysmsg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.244639] (rsysmsg) StdoutLine: {'line': b'[100%] Built target rsysmsg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.296875] (-) TimerEvent: {}
+[0.397503] (-) TimerEvent: {}
+[0.403230] (rsysmsg) StdoutLine: {'line': b'running egg_info\n'}
+[0.404143] (rsysmsg) StdoutLine: {'line': b'writing rsysmsg.egg-info/PKG-INFO\n'}
+[0.404460] (rsysmsg) StdoutLine: {'line': b'writing dependency_links to rsysmsg.egg-info/dependency_links.txt\n'}
+[0.404894] (rsysmsg) StdoutLine: {'line': b'writing top-level names to rsysmsg.egg-info/top_level.txt\n'}
+[0.407444] (rsysmsg) StdoutLine: {'line': b"reading manifest file 'rsysmsg.egg-info/SOURCES.txt'\n"}
+[0.408009] (rsysmsg) StdoutLine: {'line': b"writing manifest file 'rsysmsg.egg-info/SOURCES.txt'\n"}
+[0.441041] (rsysmsg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rsysmsg_egg\n'}
+[0.457086] (rsysmsg) CommandEnded: {'returncode': 0}
+[0.458679] (rsysmsg) JobProgress: {'identifier': 'rsysmsg', 'progress': 'install'}
+[0.469042] (rsysmsg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rai-m/robosys/build/rsysmsg'], 'cwd': '/home/rai-m/robosys/build/rsysmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rai-m'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rai-m/robosys/install/rsysmsg/lib:/home/rai-m/test1_ws/install/robo_msg/lib:/home/rai-m/test1_ws/install/robo1_msg/lib:/home/rai-m/test1_ws/install/multi01_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/rai-m'), ('OLDPWD', '/home/rai-m'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rai-m/robosys/install:/home/rai-m/mlr01_ws/install:/home/rai-m/test1_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rai-m'), ('NAME', 'DESKTOP-0RGJIHD'), ('WSL_INTEROP', '/run/WSL/17211_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/rai-m/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rai-m/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Program Files (x86)/mingw64/bin:/snap/bin'), ('WT_SESSION', '041520b8-0215-4b85-835c-7479a7e45f89'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rai-m/robosys/install/fight:/home/rai-m/robosys/install/rsysmsg:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01_msg:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_DOMEIN_ID', '25'), ('PWD', '/home/rai-m/robosys/build/rsysmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages:/home/rai-m/mlr01_ws/install/lp01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo02/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo1_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/py_pubsub/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package2/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/multi01_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/multi01/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/rai-m/robosys/install/rsysmsg:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/multi01_msg:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.477118] (rsysmsg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.477472] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/ament_index/resource_index/rosidl_interfaces/rsysmsg\n'}
+[0.478171] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.478533] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.478706] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.478826] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.478892] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__functions.h\n'}
+[0.478943] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__functions.c\n'}
+[0.478989] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__struct.h\n'}
+[0.479387] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__type_support.h\n'}
+[0.479539] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/num.h\n'}
+[0.479635] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.479721] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.479804] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__functions.h\n'}
+[0.479897] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__type_support.h\n'}
+[0.479982] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__functions.c\n'}
+[0.480063] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__struct.h\n'}
+[0.480142] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/name.h\n'}
+[0.480305] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.480409] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/monster.h\n'}
+[0.480503] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.481262] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__functions.h\n'}
+[0.481434] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__type_support.h\n'}
+[0.481689] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__struct.h\n'}
+[0.481783] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__functions.c\n'}
+[0.481873] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/library_path.sh\n'}
+[0.481927] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/library_path.dsv\n'}
+[0.482352] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_generator_c.so\n'}
+[0.483086] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.483734] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.484065] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.484331] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.484803] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[0.485033] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.485284] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.485392] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__rosidl_typesupport_fastrtps_c.h\n'}
+[0.485488] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.485581] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.485674] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__rosidl_typesupport_fastrtps_c.h\n'}
+[0.486088] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.486216] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.486590] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.486877] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/num.hpp\n'}
+[0.487184] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.487241] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__type_support.hpp\n'}
+[0.487317] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__traits.hpp\n'}
+[0.487529] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__struct.hpp\n'}
+[0.487679] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__builder.hpp\n'}
+[0.487754] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.488061] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.488170] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/name.hpp\n'}
+[0.488227] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.488409] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__type_support.hpp\n'}
+[0.488465] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__traits.hpp\n'}
+[0.488512] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__builder.hpp\n'}
+[0.488557] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__struct.hpp\n'}
+[0.488601] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.488644] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/monster.hpp\n'}
+[0.488687] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.488729] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__type_support.hpp\n'}
+[0.488772] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__traits.hpp\n'}
+[0.488814] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__struct.hpp\n'}
+[0.488855] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__builder.hpp\n'}
+[0.488896] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.488937] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.488978] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.489024] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.489182] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/dds_fastrtps\n'}
+[0.489234] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.489279] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.489324] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.489367] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.489507] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/dds_fastrtps\n'}
+[0.489637] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.489712] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.489763] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/dds_fastrtps\n'}
+[0.489808] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.489854] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.489898] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.489943] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.489986] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.490028] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.490069] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__type_support.c\n'}
+[0.490112] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[0.490155] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.490241] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.490360] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__type_support.c\n'}
+[0.490427] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__rosidl_typesupport_introspection_c.h\n'}
+[0.490476] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.490561] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.490622] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__type_support.c\n'}
+[0.490673] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__rosidl_typesupport_introspection_c.h\n'}
+[0.491033] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_introspection_c.so\n'}
+[0.491246] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_c.so\n'}
+[0.491529] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg\n'}
+[0.491730] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg\n'}
+[0.492062] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail\n'}
+[0.492123] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.492171] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/msg/detail/num__type_support.cpp\n'}
+[0.492217] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv\n'}
+[0.492262] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail\n'}
+[0.492326] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__type_support.cpp\n'}
+[0.492389] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/srv/detail/name__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.492436] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action\n'}
+[0.492481] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail\n'}
+[0.492526] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__type_support.cpp\n'}
+[0.492569] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/include/rsysmsg/rsysmsg/action/detail/monster__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.492613] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.492655] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_typesupport_cpp.so\n'}
+[0.492699] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/pythonpath.sh\n'}
+[0.492741] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/pythonpath.dsv\n'}
+[0.492831] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg-0.0.0-py3.10.egg-info\n'}
+[0.492903] (rsysmsg) StdoutLine: {'line': b'-- Installing: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.492951] (rsysmsg) StdoutLine: {'line': b'-- Installing: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.493009] (rsysmsg) StdoutLine: {'line': b'-- Installing: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.493055] (rsysmsg) StdoutLine: {'line': b'-- Installing: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.493098] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg\n'}
+[0.493142] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/msg\n'}
+[0.493382] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/msg/_num.py\n'}
+[0.493452] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/msg/_num_s.c\n'}
+[0.493910] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/msg/__init__.py\n'}
+[0.494102] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/librsysmsg__rosidl_generator_py.so\n'}
+[0.494273] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/srv\n'}
+[0.494325] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/srv/_name.py\n'}
+[0.494370] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/srv/_name_s.c\n'}
+[0.494426] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/srv/__init__.py\n'}
+[0.494473] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/action\n'}
+[0.494517] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/action/_monster_s.c\n'}
+[0.494563] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/action/_monster.py\n'}
+[0.494607] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/action/__init__.py\n'}
+[0.494651] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.494694] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.494824] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.494881] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_c.c\n'}
+[0.494930] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.494976] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/__init__.py\n'}
+[0.495022] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.497898] (-) TimerEvent: {}
+[0.532411] (rsysmsg) StdoutLine: {'line': b"Listing '/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg'...\n"}
+[0.532754] (rsysmsg) StdoutLine: {'line': b"Listing '/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/action'...\n"}
+[0.532818] (rsysmsg) StdoutLine: {'line': b"Listing '/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/msg'...\n"}
+[0.532869] (rsysmsg) StdoutLine: {'line': b"Listing '/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/srv'...\n"}
+[0.537955] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.538259] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.538555] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages/rsysmsg/rsysmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.539160] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/lib/librsysmsg__rosidl_generator_py.so\n'}
+[0.539634] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/msg/Num.idl\n'}
+[0.539969] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/srv/Name.idl\n'}
+[0.540200] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/action/Monster.idl\n'}
+[0.540557] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/msg/Num.msg\n'}
+[0.540861] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/srv/Name.srv\n'}
+[0.541491] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/srv/Name_Request.msg\n'}
+[0.541574] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/srv/Name_Response.msg\n'}
+[0.541840] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/action/Monster.action\n'}
+[0.542271] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/ament_index/resource_index/package_run_dependencies/rsysmsg\n'}
+[0.542401] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/ament_index/resource_index/parent_prefix_path/rsysmsg\n'}
+[0.542499] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/ament_prefix_path.sh\n'}
+[0.542591] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/ament_prefix_path.dsv\n'}
+[0.542678] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/path.sh\n'}
+[0.543073] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/environment/path.dsv\n'}
+[0.543230] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/local_setup.bash\n'}
+[0.543293] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/local_setup.sh\n'}
+[0.543349] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/local_setup.zsh\n'}
+[0.543399] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/local_setup.dsv\n'}
+[0.543447] (rsysmsg) StdoutLine: {'line': b'-- Installing: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.dsv\n'}
+[0.543590] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/ament_index/resource_index/packages/rsysmsg\n'}
+[0.543645] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_generator_cExport.cmake\n'}
+[0.543695] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.543748] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.543798] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.543846] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_generator_cppExport.cmake\n'}
+[0.543894] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.543940] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.543988] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.544031] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.544074] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_cExport.cmake\n'}
+[0.544117] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.544158] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.544200] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.544275] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_cppExport.cmake\n'}
+[0.544388] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.545068] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_generator_pyExport.cmake\n'}
+[0.546301] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/export_rsysmsg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.547581] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.547736] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.547851] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.547975] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.548123] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.548241] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.548364] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.548503] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsgConfig.cmake\n'}
+[0.548629] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/cmake/rsysmsgConfig-version.cmake\n'}
+[0.548743] (rsysmsg) StdoutLine: {'line': b'-- Up-to-date: /home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.xml\n'}
+[0.548837] (rsysmsg) CommandEnded: {'returncode': 0}
+[0.574603] (rsysmsg) JobEnded: {'identifier': 'rsysmsg', 'rc': 0}
+[0.577890] (fight) JobStarted: {'identifier': 'fight'}
+[0.598074] (-) TimerEvent: {}
+[0.698520] (-) TimerEvent: {}
+[0.799146] (-) TimerEvent: {}
+[0.900274] (-) TimerEvent: {}
+[1.000874] (-) TimerEvent: {}
+[1.101321] (-) TimerEvent: {}
+[1.201814] (-) TimerEvent: {}
+[1.302464] (-) TimerEvent: {}
+[1.402926] (-) TimerEvent: {}
+[1.503549] (-) TimerEvent: {}
+[1.604185] (-) TimerEvent: {}
+[1.639434] (fight) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/fight', 'build', '--build-base', '/home/rai-m/robosys/build/fight/build', 'install', '--record', '/home/rai-m/robosys/build/fight/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rai-m/robosys/src/fight', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rai-m', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rai-m/robosys/install/rsysmsg/lib:/home/rai-m/test1_ws/install/robo_msg/lib:/home/rai-m/test1_ws/install/robo1_msg/lib:/home/rai-m/test1_ws/install/multi01_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/rai-m', 'OLDPWD': '/home/rai-m', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/rai-m/robosys/install:/home/rai-m/mlr01_ws/install:/home/rai-m/test1_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rai-m', 'NAME': 'DESKTOP-0RGJIHD', 'WSL_INTEROP': '/run/WSL/17211_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/rai-m/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/rai-m/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rai-m/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Program Files (x86)/mingw64/bin:/snap/bin', 'WT_SESSION': '041520b8-0215-4b85-835c-7479a7e45f89', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/rai-m/robosys/install/fight:/home/rai-m/robosys/install/rsysmsg:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01_msg:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_DOMEIN_ID': '25', 'PWD': '/home/rai-m/robosys/build/fight', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:/home/rai-m/robosys/install/rsysmsg/local/lib/python3.10/dist-packages:/home/rai-m/mlr01_ws/install/lp01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo02/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/robo1_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/robo01/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/py_pubsub/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package2/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/my_package/lib/python3.10/site-packages:/home/rai-m/test1_ws/install/multi01_msg/local/lib/python3.10/dist-packages:/home/rai-m/test1_ws/install/multi01/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/rai-m/robosys/install/rsysmsg:/home/rai-m/test1_ws/install/cpp_pubsub:/home/rai-m/test1_ws/install/robo_msg:/home/rai-m/test1_ws/install/robo1_msg:/home/rai-m/test1_ws/install/my_package_c:/home/rai-m/test1_ws/install/multi01_msg', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[1.704374] (-) TimerEvent: {}
+[1.804826] (-) TimerEvent: {}
+[1.905319] (-) TimerEvent: {}
+[1.934980] (fight) StdoutLine: {'line': b'running egg_info\n'}
+[1.936518] (fight) StdoutLine: {'line': b'writing ../../build/fight/fight.egg-info/PKG-INFO\n'}
+[1.936676] (fight) StdoutLine: {'line': b'writing dependency_links to ../../build/fight/fight.egg-info/dependency_links.txt\n'}
+[1.936773] (fight) StdoutLine: {'line': b'writing entry points to ../../build/fight/fight.egg-info/entry_points.txt\n'}
+[1.936862] (fight) StdoutLine: {'line': b'writing requirements to ../../build/fight/fight.egg-info/requires.txt\n'}
+[1.936912] (fight) StdoutLine: {'line': b'writing top-level names to ../../build/fight/fight.egg-info/top_level.txt\n'}
+[1.938330] (fight) StdoutLine: {'line': b"reading manifest file '../../build/fight/fight.egg-info/SOURCES.txt'\n"}
+[1.939354] (fight) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.939720] (fight) StdoutLine: {'line': b"writing manifest file '../../build/fight/fight.egg-info/SOURCES.txt'\n"}
+[1.939935] (fight) StdoutLine: {'line': b'running build\n'}
+[1.940056] (fight) StdoutLine: {'line': b'running build_py\n'}
+[1.940429] (fight) StdoutLine: {'line': b'running install\n'}
+[1.940773] (fight) StdoutLine: {'line': b'running install_lib\n'}
+[1.941947] (fight) StdoutLine: {'line': b'byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightServer2.py to fightServer2.cpython-310.pyc\n'}
+[1.946583] (fight) StderrLine: {'line': b"Sorry: IndentationError: expected an indented block after 'if' statement on line 116 (fightServer2.py, line 122)\n"}
+[1.949997] (fight) StdoutLine: {'line': b'byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighterClient.py to fighterClient.cpython-310.pyc\n'}
+[1.950574] (fight) StderrLine: {'line': b'Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)\n'}
+[1.951003] (fight) StdoutLine: {'line': b'running install_data\n'}
+[1.951301] (fight) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.959813] (fight) StdoutLine: {'line': b"removing '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.960089] (fight) StdoutLine: {'line': b'Copying ../../build/fight/fight.egg-info to /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info\n'}
+[1.960196] (fight) StdoutLine: {'line': b'running install_scripts\n'}
+[1.982806] (fight) StdoutLine: {'line': b'Installing fightCli script to /home/rai-m/robosys/install/fight/lib/fight\n'}
+[1.983258] (fight) StdoutLine: {'line': b'Installing fightGui script to /home/rai-m/robosys/install/fight/lib/fight\n'}
+[1.983396] (fight) StdoutLine: {'line': b'Installing fightSv script to /home/rai-m/robosys/install/fight/lib/fight\n'}
+[1.983761] (fight) StdoutLine: {'line': b"writing list of installed files to '/home/rai-m/robosys/build/fight/install.log'\n"}
+[2.005603] (-) TimerEvent: {}
+[2.009325] (fight) CommandEnded: {'returncode': 0}
+[2.018805] (fight) JobEnded: {'identifier': 'fight', 'rc': 0}
+[2.020337] (-) EventReactorShutdown: {}

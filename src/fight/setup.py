@@ -24,9 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'fighter = fight.fighter:main',
             'fightSv = fight.fightServer:main',
             'fightGui = fight.game_gui:main',
+            'fightCli = fight.fightClient:main',
         ],
     },
 )
