@@ -1,0 +1,5 @@
+  File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightClientK.py", line 29
+    continue
+    ^^^^^^^^
+SyntaxError: 'continue' not properly in loop
+

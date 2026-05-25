@@ -1,1 +1,1 @@
-classes:rclpy:rsysmsg:std_msgs:sys:threading
+rclpy:rsysmsg:std_msgs:sys:threading

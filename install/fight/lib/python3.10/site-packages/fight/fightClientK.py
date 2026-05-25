@@ -1,8 +1,12 @@
+import sys
+import threading
 import rclpy
 from rclpy.node import Node
+from rclpy.action import ActionServer
 
 from rsysmsg.srv import Name
 from rsysmsg.msg import Num
+from rsysmsg.action import Monster
 
 class FighterClient(Node):
 
@@ -11,19 +15,20 @@ class FighterClient(Node):
         self.ID = 2
         self.reqs = [1]
         self.req = 0
+        # self.request = 0
         self.nameCli = self.create_client(Name, 'name_srv')
         self.chooseReq()
 
     def chooseReq(self):
-        while True:
-            self.get_logger().info('サーバへのリクエスト内容を選んでください. ')
-            self.get_logger().info('1:名前登録, ')
-            self.req = int(input())
-            if not self.req in self.reqs:
-                self.get_logger().info('入力エラー, そのリクエストはリストに含まれていません. ')
-                continue
-            if self.req == 1:
-                self.nameClient()
+        # while True:
+        self.get_logger().info('サーバへのリクエスト内容を選んでください. ')
+        self.get_logger().info('1:名前登録, ')
+        self.req = int(input())
+        if not self.req in self.reqs:
+            self.get_logger().info('入力エラー, そのリクエストはリストに含まれていません. ')
+            
+        elif self.req == 1:
+            self.nameClient()
 
     def nameClient(self):
         self.get_logger().info('登録したい名前を入力してください. ')
@@ -38,11 +43,13 @@ class FighterClient(Node):
 
         self.future = self.nameCli.call_async(request)
         self.get_logger().info('debugPoint1')
-        
-        self.future.add_done_callback(self.nameResCb)
+        self.future.add_done_callback(self.nameRes_callback)
         self.get_logger().info('debugPoint2')
 
-    def nameResCb(self, future):
+        
+
+    def nameRes_callback(self, future):
+        print("aaaaaaa")
         self.get_logger().info('サーバからの結果を表示します. ')
         res = future.result()
         if "E" in res.res:

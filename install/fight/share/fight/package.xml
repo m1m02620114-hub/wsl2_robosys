@@ -10,7 +10,6 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>rsysmsg</exec_depend>
-  <exec_depend>classes</exec_depend>
   <exec_depend>threading</exec_depend>
   <exec_depend>sys</exec_depend>
 

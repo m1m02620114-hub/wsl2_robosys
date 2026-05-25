@@ -250,24 +250,28 @@ class FighterServer(Node):
         self.get_logger().info("クライアントからプレイヤーネームのリクエストを受け取りました. ")
 
         if self.P1.Pname != "" and self.P2.Pname != "":
+            self.get_logger().info("エラー1")
             response.reid = request.id
             response.res = "E2"#"すでに2人のプレイヤーが登録されています. "
             return response
 
         reqName = request.name
         if self.P1.Pname != "":
-            if reqName == self.P2.Pname:
+            if reqName == self.P1.Pname:
+                self.get_logger().info("エラー2")
                 response.reid = request.id
                 response.res = "Ename"#"そのプレイヤーネームはすでに使用されています. もう一度お試しください. "
                 return response
 
             else:
+                self.get_logger().info("コレクト2")
                 self.P2.Pname = reqName
                 response.reid = 1
                 response.res = "2"#"あなたは2番目のプレイヤーとして登録されました. "
                 return response
 
         else:
+            self.get_logger().info("コレクト1")
             self.P1.Pname = reqName
             response.reid = 0
             response.res = "2"#"あなたは1番目のプレイヤーとして登録されました. "

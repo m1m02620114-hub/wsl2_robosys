@@ -1,0 +1,32 @@
+[1.116s] Invoking command in '/home/rai-m/robosys/src/fight': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
+[1.383s] running egg_info
+[1.385s] writing ../../build/fight/fight.egg-info/PKG-INFO
+[1.385s] writing dependency_links to ../../build/fight/fight.egg-info/dependency_links.txt
+[1.385s] writing entry points to ../../build/fight/fight.egg-info/entry_points.txt
+[1.386s] writing requirements to ../../build/fight/fight.egg-info/requires.txt
+[1.386s] writing top-level names to ../../build/fight/fight.egg-info/top_level.txt
+[1.386s] reading manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.387s] adding license file 'LICENSE'
+[1.387s] writing manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+[1.388s] running build
+[1.388s] running build_py
+[1.388s] copying fight/fightClientK.py -> /home/rai-m/robosys/build/fight/build/lib/fight
+[1.389s] running install
+[1.389s] running install_lib
+[1.390s] copying /home/rai-m/robosys/build/fight/build/lib/fight/fightClientK.py -> /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight
+[1.391s] byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightClientK.py to fightClientK.cpython-310.pyc
+[1.392s]   File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightClientK.py", line 29
+[1.392s]     continue
+[1.392s]     ^^^^^^^^
+[1.392s] SyntaxError: 'continue' not properly in loop
+[1.392s] 
+[1.392s] running install_data
+[1.393s] running install_egg_info
+[1.396s] removing '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info' (and everything under it)
+[1.398s] Copying ../../build/fight/fight.egg-info to /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info
+[1.398s] running install_scripts
+[1.436s] Installing fightCli script to /home/rai-m/robosys/install/fight/lib/fight
+[1.436s] Installing fightGui script to /home/rai-m/robosys/install/fight/lib/fight
+[1.437s] Installing fightSv script to /home/rai-m/robosys/install/fight/lib/fight
+[1.437s] writing list of installed files to '/home/rai-m/robosys/build/fight/install.log'
+[1.470s] Invoked command in '/home/rai-m/robosys/src/fight' returned '0': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
