@@ -68,6 +68,15 @@ bool rsysmsg__srv__name__request__convert_from_py(PyObject * _pymsg, void * _ros
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
+  {  // id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "id");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->id = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -101,6 +110,17 @@ PyObject * rsysmsg__srv__name__request__convert_to_py(void * raw_ros_message)
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "name", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // id
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->id);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -165,8 +185,8 @@ bool rsysmsg__srv__name__response__convert_from_py(PyObject * _pymsg, void * _ro
     assert(strncmp("rsysmsg.srv._name.Name_Response", full_classname_dest, 31) == 0);
   }
   rsysmsg__srv__Name_Response * ros_message = _ros_message;
-  {  // response
-    PyObject * field = PyObject_GetAttrString(_pymsg, "response");
+  {  // res
+    PyObject * field = PyObject_GetAttrString(_pymsg, "res");
     if (!field) {
       return false;
     }
@@ -176,8 +196,17 @@ bool rsysmsg__srv__name__response__convert_from_py(PyObject * _pymsg, void * _ro
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->response, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->res, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
+  {  // reid
+    PyObject * field = PyObject_GetAttrString(_pymsg, "reid");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->reid = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -202,17 +231,28 @@ PyObject * rsysmsg__srv__name__response__convert_to_py(void * raw_ros_message)
     }
   }
   rsysmsg__srv__Name_Response * ros_message = (rsysmsg__srv__Name_Response *)raw_ros_message;
-  {  // response
+  {  // res
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->response.data,
-      strlen(ros_message->response.data),
+      ros_message->res.data,
+      strlen(ros_message->res.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "response", field);
+      int rc = PyObject_SetAttrString(_pymessage, "res", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // reid
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->reid);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "reid", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

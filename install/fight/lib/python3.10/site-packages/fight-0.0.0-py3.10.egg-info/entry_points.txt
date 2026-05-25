@@ -1,5 +1,5 @@
 [console_scripts]
-fightCli = fight.fightClient:main
+fightCli = fight.fightClientK:main
 fightGui = fight.game_gui:main
-fightSv = fight.fightServer:main
+fightSv = fight.fightServerK:main
 

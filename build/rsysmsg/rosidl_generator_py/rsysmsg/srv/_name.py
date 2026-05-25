@@ -56,14 +56,17 @@ class Name_Request(metaclass=Metaclass_Name_Request):
 
     __slots__ = [
         '_name',
+        '_id',
     ]
 
     _fields_and_field_types = {
         'name': 'string',
+        'id': 'int32',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -71,6 +74,7 @@ class Name_Request(metaclass=Metaclass_Name_Request):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.name = kwargs.get('name', str())
+        self.id = kwargs.get('id', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,6 +107,8 @@ class Name_Request(metaclass=Metaclass_Name_Request):
             return False
         if self.name != other.name:
             return False
+        if self.id != other.id:
+            return False
         return True
 
     @classmethod
@@ -122,6 +128,21 @@ class Name_Request(metaclass=Metaclass_Name_Request):
                 isinstance(value, str), \
                 "The 'name' field must be of type 'str'"
         self._name = value
+
+    @builtins.property  # noqa: A003
+    def id(self):  # noqa: A003
+        """Message field 'id'."""
+        return self._id
+
+    @id.setter  # noqa: A003
+    def id(self, value):  # noqa: A003
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'id' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'id' field must be an integer in [-2147483648, 2147483647]"
+        self._id = value
 
 
 # Import statements for member types
@@ -178,22 +199,26 @@ class Name_Response(metaclass=Metaclass_Name_Response):
     """Message class 'Name_Response'."""
 
     __slots__ = [
-        '_response',
+        '_res',
+        '_reid',
     ]
 
     _fields_and_field_types = {
-        'response': 'string',
+        'res': 'string',
+        'reid': 'int32',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.response = kwargs.get('response', str())
+        self.res = kwargs.get('res', str())
+        self.reid = kwargs.get('reid', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -224,7 +249,9 @@ class Name_Response(metaclass=Metaclass_Name_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.response != other.response:
+        if self.res != other.res:
+            return False
+        if self.reid != other.reid:
             return False
         return True
 
@@ -234,17 +261,32 @@ class Name_Response(metaclass=Metaclass_Name_Response):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def response(self):
-        """Message field 'response'."""
-        return self._response
+    def res(self):
+        """Message field 'res'."""
+        return self._res
 
-    @response.setter
-    def response(self, value):
+    @res.setter
+    def res(self, value):
         if __debug__:
             assert \
                 isinstance(value, str), \
-                "The 'response' field must be of type 'str'"
-        self._response = value
+                "The 'res' field must be of type 'str'"
+        self._res = value
+
+    @builtins.property
+    def reid(self):
+        """Message field 'reid'."""
+        return self._reid
+
+    @reid.setter
+    def reid(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'reid' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'reid' field must be an integer in [-2147483648, 2147483647]"
+        self._reid = value
 
 
 class Metaclass_Name(type):

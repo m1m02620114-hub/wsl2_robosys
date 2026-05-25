@@ -7,9 +7,13 @@ module rsysmsg {
   module srv {
     struct Name_Request {
       string name;
+
+      int32 id;
     };
     struct Name_Response {
-      string response;
+      string res;
+
+      int32 reid;
     };
   };
 };

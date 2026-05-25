@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   {
     out << "name: ";
     rosidl_generator_traits::value_to_yaml(msg.name, out);
+    out << ", ";
+  }
+
+  // member: id
+  {
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,6 +51,16 @@ inline void to_block_style_yaml(
     }
     out << "name: ";
     rosidl_generator_traits::value_to_yaml(msg.name, out);
+    out << "\n";
+  }
+
+  // member: id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -117,10 +134,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: response
+  // member: res
   {
-    out << "response: ";
-    rosidl_generator_traits::value_to_yaml(msg.response, out);
+    out << "res: ";
+    rosidl_generator_traits::value_to_yaml(msg.res, out);
+    out << ", ";
+  }
+
+  // member: reid
+  {
+    out << "reid: ";
+    rosidl_generator_traits::value_to_yaml(msg.reid, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -129,13 +153,23 @@ inline void to_block_style_yaml(
   const Name_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: response
+  // member: res
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "response: ";
-    rosidl_generator_traits::value_to_yaml(msg.response, out);
+    out << "res: ";
+    rosidl_generator_traits::value_to_yaml(msg.res, out);
+    out << "\n";
+  }
+
+  // member: reid
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "reid: ";
+    rosidl_generator_traits::value_to_yaml(msg.reid, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

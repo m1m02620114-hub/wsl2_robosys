@@ -39,6 +39,7 @@ struct Name_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->name = "";
+      this->id = 0l;
     }
   }
 
@@ -49,6 +50,7 @@ struct Name_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->name = "";
+      this->id = 0l;
     }
   }
 
@@ -56,12 +58,21 @@ struct Name_Request_
   using _name_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _name_type name;
+  using _id_type =
+    int32_t;
+  _id_type id;
 
   // setters for named parameter idiom
   Type & set__name(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->name = _arg;
+    return *this;
+  }
+  Type & set__id(
+    const int32_t & _arg)
+  {
+    this->id = _arg;
     return *this;
   }
 
@@ -110,6 +121,9 @@ struct Name_Request_
     if (this->name != other.name) {
       return false;
     }
+    if (this->id != other.id) {
+      return false;
+    }
     return true;
   }
   bool operator!=(const Name_Request_ & other) const
@@ -152,30 +166,41 @@ struct Name_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response = "";
+      this->res = "";
+      this->reid = 0l;
     }
   }
 
   explicit Name_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response(_alloc)
+  : res(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response = "";
+      this->res = "";
+      this->reid = 0l;
     }
   }
 
   // field types and members
-  using _response_type =
+  using _res_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _response_type response;
+  _res_type res;
+  using _reid_type =
+    int32_t;
+  _reid_type reid;
 
   // setters for named parameter idiom
-  Type & set__response(
+  Type & set__res(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->response = _arg;
+    this->res = _arg;
+    return *this;
+  }
+  Type & set__reid(
+    const int32_t & _arg)
+  {
+    this->reid = _arg;
     return *this;
   }
 
@@ -221,7 +246,10 @@ struct Name_Response_
   // comparison operators
   bool operator==(const Name_Response_ & other) const
   {
-    if (this->response != other.response) {
+    if (this->res != other.res) {
+      return false;
+    }
+    if (this->reid != other.reid) {
       return false;
     }
     return true;

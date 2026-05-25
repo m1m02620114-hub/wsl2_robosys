@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/fight/fight.egg-info/PKG-INFO
+writing dependency_links to ../../build/fight/fight.egg-info/dependency_links.txt
+writing entry points to ../../build/fight/fight.egg-info/entry_points.txt
+writing requirements to ../../build/fight/fight.egg-info/requires.txt
+writing top-level names to ../../build/fight/fight.egg-info/top_level.txt
+reading manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/fight/fight.egg-info/SOURCES.txt'
+running build
+running build_py
+copying fight/fightServer2.py -> /home/rai-m/robosys/build/fight/build/lib/fight
+running install
+running install_lib
+copying /home/rai-m/robosys/build/fight/build/lib/fight/fightServer2.py -> /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight
+byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightServer2.py to fightServer2.cpython-310.pyc
+byte-compiling /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fighterClient.py to fighterClient.cpython-310.pyc
+Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)
+running install_data
+running install_egg_info
+removing '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/fight/fight.egg-info to /home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fightCli script to /home/rai-m/robosys/install/fight/lib/fight
+Installing fightGui script to /home/rai-m/robosys/install/fight/lib/fight
+Installing fightSv script to /home/rai-m/robosys/install/fight/lib/fight
+writing list of installed files to '/home/rai-m/robosys/build/fight/install.log'

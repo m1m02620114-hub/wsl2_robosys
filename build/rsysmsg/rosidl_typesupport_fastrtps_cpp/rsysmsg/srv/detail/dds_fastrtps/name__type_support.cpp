@@ -34,6 +34,8 @@ cdr_serialize(
 {
   // Member: name
   cdr << ros_message.name;
+  // Member: id
+  cdr << ros_message.id;
   return true;
 }
 
@@ -45,6 +47,9 @@ cdr_deserialize(
 {
   // Member: name
   cdr >> ros_message.name;
+
+  // Member: id
+  cdr >> ros_message.id;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -66,6 +71,12 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.name.size() + 1);
+  // Member: id
+  {
+    size_t item_size = sizeof(ros_message.id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -103,6 +114,15 @@ max_serialized_size_Name_Request(
     }
   }
 
+  // Member: id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -111,7 +131,7 @@ max_serialized_size_Name_Request(
     using DataType = rsysmsg::srv::Name_Request;
     is_plain =
       (
-      offsetof(DataType, name) +
+      offsetof(DataType, id) +
       last_member_size
       ) == ret_val;
   }
@@ -247,8 +267,10 @@ cdr_serialize(
   const rsysmsg::srv::Name_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: response
-  cdr << ros_message.response;
+  // Member: res
+  cdr << ros_message.res;
+  // Member: reid
+  cdr << ros_message.reid;
   return true;
 }
 
@@ -258,8 +280,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   rsysmsg::srv::Name_Response & ros_message)
 {
-  // Member: response
-  cdr >> ros_message.response;
+  // Member: res
+  cdr >> ros_message.res;
+
+  // Member: reid
+  cdr >> ros_message.reid;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -277,10 +302,16 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: response
+  // Member: res
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.response.size() + 1);
+    (ros_message.res.size() + 1);
+  // Member: reid
+  {
+    size_t item_size = sizeof(ros_message.reid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -305,7 +336,7 @@ max_serialized_size_Name_Response(
   is_plain = true;
 
 
-  // Member: response
+  // Member: res
   {
     size_t array_size = 1;
 
@@ -318,6 +349,15 @@ max_serialized_size_Name_Response(
     }
   }
 
+  // Member: reid
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -326,7 +366,7 @@ max_serialized_size_Name_Response(
     using DataType = rsysmsg::srv::Name_Response;
     is_plain =
       (
-      offsetof(DataType, response) +
+      offsetof(DataType, reid) +
       last_member_size
       ) == ret_val;
   }

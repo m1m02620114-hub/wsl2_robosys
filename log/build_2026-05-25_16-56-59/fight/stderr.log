@@ -1,0 +1,6 @@
+  File "/home/rai-m/robosys/install/fight/lib/python3.10/site-packages/fight/fightClientK.py", line 25
+    continue
+    ^^^^^^^^
+SyntaxError: 'continue' not properly in loop
+
+Sorry: IndentationError: expected an indented block after function definition on line 14 (fighterClient.py, line 18)

@@ -25,6 +25,7 @@ rsysmsg__srv__Name_Request__init(rsysmsg__srv__Name_Request * msg)
     rsysmsg__srv__Name_Request__fini(msg);
     return false;
   }
+  // id
   return true;
 }
 
@@ -36,6 +37,7 @@ rsysmsg__srv__Name_Request__fini(rsysmsg__srv__Name_Request * msg)
   }
   // name
   rosidl_runtime_c__String__fini(&msg->name);
+  // id
 }
 
 bool
@@ -48,6 +50,10 @@ rsysmsg__srv__Name_Request__are_equal(const rsysmsg__srv__Name_Request * lhs, co
   if (!rosidl_runtime_c__String__are_equal(
       &(lhs->name), &(rhs->name)))
   {
+    return false;
+  }
+  // id
+  if (lhs->id != rhs->id) {
     return false;
   }
   return true;
@@ -67,6 +73,8 @@ rsysmsg__srv__Name_Request__copy(
   {
     return false;
   }
+  // id
+  output->id = input->id;
   return true;
 }
 
@@ -251,7 +259,7 @@ rsysmsg__srv__Name_Request__Sequence__copy(
 
 
 // Include directives for member types
-// Member `response`
+// Member `res`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -261,11 +269,12 @@ rsysmsg__srv__Name_Response__init(rsysmsg__srv__Name_Response * msg)
   if (!msg) {
     return false;
   }
-  // response
-  if (!rosidl_runtime_c__String__init(&msg->response)) {
+  // res
+  if (!rosidl_runtime_c__String__init(&msg->res)) {
     rsysmsg__srv__Name_Response__fini(msg);
     return false;
   }
+  // reid
   return true;
 }
 
@@ -275,8 +284,9 @@ rsysmsg__srv__Name_Response__fini(rsysmsg__srv__Name_Response * msg)
   if (!msg) {
     return;
   }
-  // response
-  rosidl_runtime_c__String__fini(&msg->response);
+  // res
+  rosidl_runtime_c__String__fini(&msg->res);
+  // reid
 }
 
 bool
@@ -285,10 +295,14 @@ rsysmsg__srv__Name_Response__are_equal(const rsysmsg__srv__Name_Response * lhs, 
   if (!lhs || !rhs) {
     return false;
   }
-  // response
+  // res
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->response), &(rhs->response)))
+      &(lhs->res), &(rhs->res)))
   {
+    return false;
+  }
+  // reid
+  if (lhs->reid != rhs->reid) {
     return false;
   }
   return true;
@@ -302,12 +316,14 @@ rsysmsg__srv__Name_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // response
+  // res
   if (!rosidl_runtime_c__String__copy(
-      &(input->response), &(output->response)))
+      &(input->res), &(output->res)))
   {
     return false;
   }
+  // reid
+  output->reid = input->reid;
   return true;
 }
 

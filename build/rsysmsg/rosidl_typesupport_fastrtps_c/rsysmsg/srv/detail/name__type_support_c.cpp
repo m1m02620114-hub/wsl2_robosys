@@ -65,6 +65,11 @@ static bool _Name_Request__cdr_serialize(
     cdr << str->data;
   }
 
+  // Field name: id
+  {
+    cdr << ros_message->id;
+  }
+
   return true;
 }
 
@@ -93,6 +98,11 @@ static bool _Name_Request__cdr_deserialize(
     }
   }
 
+  // Field name: id
+  {
+    cdr >> ros_message->id;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -114,6 +124,12 @@ size_t get_serialized_size_rsysmsg__srv__Name_Request(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->name.size + 1);
+  // field.name id
+  {
+    size_t item_size = sizeof(ros_message->id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -155,6 +171,14 @@ size_t max_serialized_size_rsysmsg__srv__Name_Request(
         1;
     }
   }
+  // member: id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +188,7 @@ size_t max_serialized_size_rsysmsg__srv__Name_Request(
     using DataType = rsysmsg__srv__Name_Request;
     is_plain =
       (
-      offsetof(DataType, name) +
+      offsetof(DataType, id) +
       last_member_size
       ) == ret_val;
   }
@@ -253,9 +277,9 @@ extern "C"
 #endif
 
 // already included above
-// #include "rosidl_runtime_c/string.h"  // response
+// #include "rosidl_runtime_c/string.h"  // res
 // already included above
-// #include "rosidl_runtime_c/string_functions.h"  // response
+// #include "rosidl_runtime_c/string_functions.h"  // res
 
 // forward declare type support functions
 
@@ -271,9 +295,9 @@ static bool _Name_Response__cdr_serialize(
     return false;
   }
   const _Name_Response__ros_msg_type * ros_message = static_cast<const _Name_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response
+  // Field name: res
   {
-    const rosidl_runtime_c__String * str = &ros_message->response;
+    const rosidl_runtime_c__String * str = &ros_message->res;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -283,6 +307,11 @@ static bool _Name_Response__cdr_serialize(
       return false;
     }
     cdr << str->data;
+  }
+
+  // Field name: reid
+  {
+    cdr << ros_message->reid;
   }
 
   return true;
@@ -297,20 +326,25 @@ static bool _Name_Response__cdr_deserialize(
     return false;
   }
   _Name_Response__ros_msg_type * ros_message = static_cast<_Name_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response
+  // Field name: res
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->response.data) {
-      rosidl_runtime_c__String__init(&ros_message->response);
+    if (!ros_message->res.data) {
+      rosidl_runtime_c__String__init(&ros_message->res);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->response,
+      &ros_message->res,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'response'\n");
+      fprintf(stderr, "failed to assign string into field 'res'\n");
       return false;
     }
+  }
+
+  // Field name: reid
+  {
+    cdr >> ros_message->reid;
   }
 
   return true;
@@ -330,10 +364,16 @@ size_t get_serialized_size_rsysmsg__srv__Name_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name response
+  // field.name res
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->response.size + 1);
+    (ros_message->res.size + 1);
+  // field.name reid
+  {
+    size_t item_size = sizeof(ros_message->reid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -363,7 +403,7 @@ size_t max_serialized_size_rsysmsg__srv__Name_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: response
+  // member: res
   {
     size_t array_size = 1;
 
@@ -375,6 +415,14 @@ size_t max_serialized_size_rsysmsg__srv__Name_Response(
         1;
     }
   }
+  // member: reid
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -384,7 +432,7 @@ size_t max_serialized_size_rsysmsg__srv__Name_Response(
     using DataType = rsysmsg__srv__Name_Response;
     is_plain =
       (
-      offsetof(DataType, response) +
+      offsetof(DataType, reid) +
       last_member_size
       ) == ret_val;
   }

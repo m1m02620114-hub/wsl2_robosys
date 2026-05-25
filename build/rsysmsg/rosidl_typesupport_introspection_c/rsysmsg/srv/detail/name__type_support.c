@@ -35,7 +35,7 @@ void rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Reques
   rsysmsg__srv__Name_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Request_message_member_array[2] = {
   {
     "name",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -52,13 +52,30 @@ static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Requ
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rsysmsg__srv__Name_Request, id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Request_message_members = {
   "rsysmsg__srv",  // message namespace
   "Name_Request",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(rsysmsg__srv__Name_Request),
   rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Request_message_member_array,  // message members
   rsysmsg__srv__Name_Request__rosidl_typesupport_introspection_c__Name_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -105,7 +122,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 
 // Include directives for member types
-// Member `response`
+// Member `res`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -128,16 +145,33 @@ void rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Respo
   rsysmsg__srv__Name_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Response_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Response_message_member_array[2] = {
   {
-    "response",  // name
+    "res",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(rsysmsg__srv__Name_Response, response),  // bytes offset in struct
+    offsetof(rsysmsg__srv__Name_Response, res),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "reid",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rsysmsg__srv__Name_Response, reid),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -151,7 +185,7 @@ static rosidl_typesupport_introspection_c__MessageMember rsysmsg__srv__Name_Resp
 static const rosidl_typesupport_introspection_c__MessageMembers rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Response_message_members = {
   "rsysmsg__srv",  // message namespace
   "Name_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(rsysmsg__srv__Name_Response),
   rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Response_message_member_array,  // message members
   rsysmsg__srv__Name_Response__rosidl_typesupport_introspection_c__Name_Response_init_function,  // function to initialize message memory (memory has to be allocated)

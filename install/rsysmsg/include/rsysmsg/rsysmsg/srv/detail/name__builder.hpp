@@ -21,16 +21,32 @@ namespace srv
 namespace builder
 {
 
+class Init_Name_Request_id
+{
+public:
+  explicit Init_Name_Request_id(::rsysmsg::srv::Name_Request & msg)
+  : msg_(msg)
+  {}
+  ::rsysmsg::srv::Name_Request id(::rsysmsg::srv::Name_Request::_id_type arg)
+  {
+    msg_.id = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::rsysmsg::srv::Name_Request msg_;
+};
+
 class Init_Name_Request_name
 {
 public:
   Init_Name_Request_name()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::rsysmsg::srv::Name_Request name(::rsysmsg::srv::Name_Request::_name_type arg)
+  Init_Name_Request_id name(::rsysmsg::srv::Name_Request::_name_type arg)
   {
     msg_.name = std::move(arg);
-    return std::move(msg_);
+    return Init_Name_Request_id(msg_);
   }
 
 private:
@@ -63,16 +79,32 @@ namespace srv
 namespace builder
 {
 
-class Init_Name_Response_response
+class Init_Name_Response_reid
 {
 public:
-  Init_Name_Response_response()
+  explicit Init_Name_Response_reid(::rsysmsg::srv::Name_Response & msg)
+  : msg_(msg)
+  {}
+  ::rsysmsg::srv::Name_Response reid(::rsysmsg::srv::Name_Response::_reid_type arg)
+  {
+    msg_.reid = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::rsysmsg::srv::Name_Response msg_;
+};
+
+class Init_Name_Response_res
+{
+public:
+  Init_Name_Response_res()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::rsysmsg::srv::Name_Response response(::rsysmsg::srv::Name_Response::_response_type arg)
+  Init_Name_Response_reid res(::rsysmsg::srv::Name_Response::_res_type arg)
   {
-    msg_.response = std::move(arg);
-    return std::move(msg_);
+    msg_.res = std::move(arg);
+    return Init_Name_Response_reid(msg_);
   }
 
 private:
@@ -90,7 +122,7 @@ template<>
 inline
 auto build<::rsysmsg::srv::Name_Response>()
 {
-  return rsysmsg::srv::builder::Init_Name_Response_response();
+  return rsysmsg::srv::builder::Init_Name_Response_res();
 }
 
 }  // namespace rsysmsg

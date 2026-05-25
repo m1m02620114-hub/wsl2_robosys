@@ -1,0 +1,55 @@
+[0.018s] Invoking command in '/home/rai-m/robosys/build/rsysmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22
+[0.052s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.231s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.757s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.759s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.765s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.777s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.791s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.834s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.107s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.107s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name rsysmsg
+[1.107s]   --arguments-file
+[1.107s]   /home/rai-m/robosys/build/rsysmsg/rosidl_adapter__arguments__rsysmsg.json
+[1.108s]   --output-dir /home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg
+[1.108s]   --output-file
+[1.108s]   /home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg.idls) returned
+[1.108s]   error code 1:
+[1.108s] 
+[1.108s]   Error processing 'int32 ID' of 'rsysmsg/Name_Request': ''ID' is an invalid
+[1.108s]   field name.  It should have the pattern
+[1.108s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[1.108s] 
+[1.108s]   Traceback (most recent call last):
+[1.108s] 
+[1.109s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.109s]       return _run_code(code, main_globals, None,
+[1.109s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.109s]       exec(code, run_globals)
+[1.109s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.109s]       sys.exit(main())
+[1.109s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.109s]       abs_idl_file = convert_to_idl(
+[1.109s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[1.109s]       return convert_srv_to_idl(
+[1.109s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[1.109s]       srv = parse_service_string(package_name, input_file.stem, content)
+[1.109s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string
+[1.110s]       request_message = parse_message_string(
+[1.110s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[1.110s]       fields.append(Field(
+[1.110s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[1.110s]       raise NameError(
+[1.110s] 
+[1.110s]   NameError: 'ID' is an invalid field name.  It should have the pattern
+[1.110s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[1.110s] 
+[1.110s] Call Stack (most recent call first):
+[1.110s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.110s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.110s] 
+[1.110s] [0m
+[1.112s] -- Configuring incomplete, errors occurred!
+[1.112s] See also "/home/rai-m/robosys/build/rsysmsg/CMakeFiles/CMakeOutput.log".
+[1.114s] gmake: *** [Makefile:1179: cmake_check_build_system] Error 1
+[1.117s] Invoked command in '/home/rai-m/robosys/build/rsysmsg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22

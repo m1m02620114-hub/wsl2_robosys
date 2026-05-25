@@ -14,8 +14,7 @@ class GameClient(Node):
 
     def __init__(self):
         super().__init__('game_client')
-
-        self.player_id = None
+        self.player_id = 2
 
         # 1. サーバーの player_name 登録用クライアント
         self.client = self.create_client(Name, 'name_srv')
@@ -39,12 +38,12 @@ class GameClient(Node):
         user_name = input("プレイヤー名を入力してください: ")
         print("========================================")
 
-        request = Name.Request()
-        request.name = user_name
 
         while not self.client.wait_for_service(timeout_sec=5.0):
             self.get_logger().info('name_srv サーバーの起動を待っています...')
-
+        request = Name.Request()
+        request.name = user_name
+        request.id =self.player_id
         self.future = self.client.call_async(request)
         self.future.add_done_callback(self.response_callback)
 
@@ -66,9 +65,9 @@ class GameClient(Node):
                 print(response.res)
                 print("対戦相手が参加するのを待っています...")
                 
-                self.player_id = 0  # サーバーから割り振られたIDを記憶
+                self.player_id = response.reid  # サーバーから割り振られたIDを記憶
                 msg = Num()
-                msg.ID = 0  
+                msg.id = 0  
                 self.select_start_pub.publish(msg)
                 print("⇒ サーバへモンスター選択開始トピックを送信しました。")
                 
@@ -76,7 +75,7 @@ class GameClient(Node):
                 print(response.res)
                 print("プレイヤーが揃いました。")
                 
-                self.player_id = 1  # サーバーから割り振られたIDを記憶
+                self.player_id = response.reid  # サーバーから割り振られたIDを記憶
                 msg = Num()
                 msg.ID = 1  
                 self.select_start_pub.publish(msg)

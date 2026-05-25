@@ -1,0 +1,203 @@
+[0.526s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.526s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x756091651d20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x756091651810>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x756091651810>>)
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.047s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rai-m/robosys'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extension 'ignore_ament_install'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extension 'colcon_pkg'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extensions ['colcon_meta']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extension 'colcon_meta'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extensions ['ros']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/fight) by extension 'ros'
+[1.074s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fight' with type 'ros.ament_python' and name 'fight'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extensions ['ignore', 'ignore_ament_install']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extension 'ignore'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extension 'ignore_ament_install'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extensions ['colcon_pkg']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extension 'colcon_pkg'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extensions ['colcon_meta']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extension 'colcon_meta'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extensions ['ros']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/rsysmsg) by extension 'ros'
+[1.075s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rsysmsg' with type 'ros.ament_cmake' and name 'rsysmsg'
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/rai-m/robosys/install
+[1.151s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/rai-m/mlr01_ws/install
+[1.152s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/rai-m/test1_ws/install
+[1.153s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_target' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_clean_first' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'cmake_force_configure' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'ament_cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'rsysmsg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.247s] DEBUG:colcon.colcon_core.verb:Building package 'rsysmsg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rai-m/robosys/build/rsysmsg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rai-m/robosys/install/rsysmsg', 'merge_install': False, 'path': '/home/rai-m/robosys/src/rsysmsg', 'symlink_install': False, 'test_result_base': None}
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_target' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_clean_cache' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_clean_first' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'cmake_force_configure' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'ament_cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'catkin_cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'fight' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.248s] DEBUG:colcon.colcon_core.verb:Building package 'fight' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rai-m/robosys/build/fight', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rai-m/robosys/install/fight', 'merge_install': False, 'path': '/home/rai-m/robosys/src/fight', 'symlink_install': False, 'test_result_base': None}
+[1.248s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.251s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.252s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rai-m/robosys/src/rsysmsg' with build type 'ament_cmake'
+[1.252s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rai-m/robosys/src/rsysmsg'
+[1.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.262s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.263s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rai-m/robosys/build/rsysmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22
+[1.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rai-m/robosys/build/rsysmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22
+[1.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rai-m/robosys/build/rsysmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --install /home/rai-m/robosys/build/rsysmsg
+[1.906s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rsysmsg)
+[1.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rai-m/robosys/build/rsysmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --install /home/rai-m/robosys/build/rsysmsg
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg' for CMake module files
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg' for CMake config files
+[1.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('rsysmsg', 'cmake_prefix_path')
+[1.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.ps1'
+[1.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.dsv'
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.sh'
+[1.927s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib'
+[1.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('rsysmsg', 'ld_library_path_lib')
+[1.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.ps1'
+[1.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.dsv'
+[1.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.sh'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/bin'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib/pkgconfig/rsysmsg.pc'
+[1.929s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib/python3.10/site-packages'
+[1.930s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/bin'
+[1.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.ps1'
+[1.931s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.dsv'
+[1.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.sh'
+[1.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.bash'
+[1.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.zsh'
+[1.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rai-m/robosys/install/rsysmsg/share/colcon-core/packages/rsysmsg)
+[1.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rsysmsg)
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg' for CMake module files
+[1.940s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg' for CMake config files
+[1.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('rsysmsg', 'cmake_prefix_path')
+[1.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.ps1'
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.dsv'
+[1.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/cmake_prefix_path.sh'
+[1.944s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib'
+[1.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('rsysmsg', 'ld_library_path_lib')
+[1.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.ps1'
+[1.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.dsv'
+[1.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/hook/ld_library_path_lib.sh'
+[1.946s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/bin'
+[1.946s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib/pkgconfig/rsysmsg.pc'
+[1.946s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/lib/python3.10/site-packages'
+[1.947s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/rsysmsg/bin'
+[1.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.ps1'
+[1.948s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.dsv'
+[1.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.sh'
+[1.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.bash'
+[1.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/rsysmsg/share/rsysmsg/package.zsh'
+[1.950s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rai-m/robosys/install/rsysmsg/share/colcon-core/packages/rsysmsg)
+[1.950s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rai-m/robosys/src/fight' with build type 'ament_python'
+[1.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('fight', 'ament_prefix_path')
+[1.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/fight/share/fight/hook/ament_prefix_path.ps1'
+[1.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/fight/share/fight/hook/ament_prefix_path.dsv'
+[1.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/fight/share/fight/hook/ament_prefix_path.sh'
+[1.956s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.956s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.478s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rai-m/robosys/src/fight'
+[2.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rai-m/robosys/src/fight': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
+[3.784s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight' for CMake module files
+[3.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rai-m/robosys/src/fight' returned '0': PYTHONPATH=/home/rai-m/robosys/build/fight/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rai-m/robosys/install/fight/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fight build --build-base /home/rai-m/robosys/build/fight/build install --record /home/rai-m/robosys/build/fight/install.log --single-version-externally-managed install_data
+[3.786s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight' for CMake config files
+[3.786s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight/lib'
+[3.787s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight/bin'
+[3.787s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight/lib/pkgconfig/fight.pc'
+[3.787s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight/lib/python3.10/site-packages'
+[3.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('fight', 'pythonpath')
+[3.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/fight/share/fight/hook/pythonpath.ps1'
+[3.788s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rai-m/robosys/install/fight/share/fight/hook/pythonpath.dsv'
+[3.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rai-m/robosys/install/fight/share/fight/hook/pythonpath.sh'
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/rai-m/robosys/install/fight/bin'
+[3.789s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fight)
+[3.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/fight/share/fight/package.ps1'
+[3.790s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rai-m/robosys/install/fight/share/fight/package.dsv'
+[3.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/fight/share/fight/package.sh'
+[3.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/fight/share/fight/package.bash'
+[3.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/rai-m/robosys/install/fight/share/fight/package.zsh'
+[3.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rai-m/robosys/install/fight/share/colcon-core/packages/fight)
+[3.794s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.796s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.796s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.796s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.901s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.902s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[3.902s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.903s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rai-m/robosys/install/local_setup.ps1'
+[3.907s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rai-m/robosys/install/_local_setup_util_ps1.py'
+[3.910s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rai-m/robosys/install/setup.ps1'
+[3.913s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rai-m/robosys/install/local_setup.sh'
+[3.915s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rai-m/robosys/install/_local_setup_util_sh.py'
+[3.918s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rai-m/robosys/install/setup.sh'
+[3.920s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rai-m/robosys/install/local_setup.bash'
+[3.921s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rai-m/robosys/install/setup.bash'
+[3.926s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rai-m/robosys/install/local_setup.zsh'
+[3.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rai-m/robosys/install/setup.zsh'

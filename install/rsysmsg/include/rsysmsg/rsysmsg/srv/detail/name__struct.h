@@ -25,6 +25,7 @@ extern "C"
 typedef struct rsysmsg__srv__Name_Request
 {
   rosidl_runtime_c__String name;
+  int32_t id;
 } rsysmsg__srv__Name_Request;
 
 // Struct for a sequence of rsysmsg__srv__Name_Request.
@@ -41,14 +42,15 @@ typedef struct rsysmsg__srv__Name_Request__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'response'
+// Member 'res'
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/Name in the package rsysmsg.
 typedef struct rsysmsg__srv__Name_Response
 {
-  rosidl_runtime_c__String response;
+  rosidl_runtime_c__String res;
+  int32_t reid;
 } rsysmsg__srv__Name_Response;
 
 // Struct for a sequence of rsysmsg__srv__Name_Response.
