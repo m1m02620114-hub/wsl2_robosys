@@ -2,17 +2,17 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
 
-
+import time
 
 from rsysmsg.srv import Name
 from rsysmsg.msg import Num
 from rsysmsg.action import Monster
 
-monsters = {"A":{"hp": 50, "speed": 5, "attack": 10, "defense": 10},
-            "B":{"hp": 50, "speed": 5, "attack": 10, "defense": 10},
-            "C":{"hp": 50, "speed": 5, "attack": 10, "defense": 10},
-            "D":{"hp": 50, "speed": 5, "attack": 10, "defense": 10},
-            "E":{"hp": 50, "speed": 5, "attack": 10, "defense": 10}}
+monsters = [{"name": "A", "hp": 50, "speed": 5, "attack": 10, "defense": 10},
+            {"name": "B", "hp": 50, "speed": 5, "attack": 10, "defense": 10},
+            {"name": "C", "hp": 50, "speed": 5, "attack": 10, "defense": 10},
+            {"name": "D", "hp": 50, "speed": 5, "attack": 10, "defense": 10},
+            {"name": "E", "hp": 50, "speed": 5, "attack": 10, "defense": 10}]
 
 class Player:
     def __init__(self, Pname, Pnum, monsters, Php, Pspeed, Pattack, Pdefense):
@@ -95,8 +95,9 @@ class FighterServer(Node):
         self.ready = [0, 0]
         self.order = [0, 0]
         self.subscription_monster = self.create_subscription(Num, 'monster_select', self.monsterCb, 10)
+        self.monstercompPublish = self.create_publisher(Num, 'monsterSelectComplete', 10)
         self.monster_select_ID = 2
-        self.pre_monsters = [[0, 0, 0], [0, 0, 0]]
+        self.pre_monsters = [[], []]
         self.action_client_monster_0 = ActionClient(self, Monster, 'monster_action_0')
         self.action_client_monster_1 = ActionClient(self, Monster, 'monster_action_1')
         self.get_logger().info('サーバ準備完了')
@@ -115,42 +116,60 @@ class FighterServer(Node):
             if not self.action_client_monster_0.wait_for_server():
                 self.get_logger().info('クライアントが見つかりませんでした. ')
                 return
+            self.get_logger().info('プレイヤー1用のアクションクライアントが起動しました. ')
+            self.monster_select_ID = 0
             self.send_goal_monster_future = self.action_client_monster_0.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
             self.send_goal_monster_future.add_done_callback(self.goal_response_callback)
         else:
             if not self.action_client_monster_1.wait_for_server():
                 self.get_logger().info('クライアントが見つかりませんでした. ')
                 return
+            self.get_logger().info('プレイヤー2用のアクションクライアントが起動しました. ')
+            self.monster_select_ID = 1
             self.send_goal_monster_future = self.action_client_monster_1.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
             self.send_goal_monster_future.add_done_callback(self.goal_response_callback)
             
     def goal_response_callback(self, future):
         self.get_logger().info('goal_response_callback')
         goal_handle = future.result()
-        if goal_handle == 2:
-            self.get_logger().info('プレイヤーがリクエストを取り消しました. ')
-            return
-        self.get_logger().info('クライアントが承認しました. ')
+        # if goal_handle.result == 2:
+        #     self.get_logger().info('プレイヤーがリクエストを取り消しました. ')
+        #     return
+        # self.get_logger().info('クライアントが承認しました. ')
 
-        self.pre_monsters[self.monster_select_ID] = [0, 0, 0] #プレイヤーの登録用リストを初期化
+        self.pre_monsters[self.monster_select_ID] = [] #プレイヤーの登録用リストを初期化
 
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)
+        self.get_logger().info('goal_response_callback_end')
 
     def get_result_callback(self, future):
         self.get_logger().info('get_result_callback')
         result = future.result().result
         self.get_logger().info('終了メッセージ受信')
+        time.sleep(0.5)
+        msg = Num()
+        msg.num = self.monster_select_ID
+        self.monstercompPublish.publish(msg)
+        self.monster_select_ID = 2
+        self.get_logger().info('クライアントに完了メッセージを送信しました. ')
 
     def feedback_callback(self, feedback_msg):
         self.get_logger().info('feedback_callback')
         self.get_logger().info('フィードバック受信')
-        monster = feedback_msg.monster
-        num = feedback_msg.fbnum
-        if monster == 'back':
-            self.pre_monsters[monster_select_ID][num-1] = 0
+        monster = feedback_msg.feedback.feedback
+        print(monster)
+        if monster == -1:
+            self.pre_monsters[self.monster_select_ID].pop()
+            self.get_logger().info('取り消し')
+            print(self.pre_monsters[self.monster_select_ID])
         else:
-            self.pre_monster[monster_select_ID][num] = monster
+            print(type(monster))
+            now = monster-1
+            self.pre_monsters[self.monster_select_ID].append(monster)
+            
+            self.get_logger().info('モンスターを追加: %s ' % monsters[now])
+            print(self.pre_monsters[self.monster_select_ID])
 
         
 
@@ -160,12 +179,12 @@ class FighterServer(Node):
 # アクション通信クライアントを起動する. 
     def monsterCb(self, msg):
         self.get_logger().info('monsterCb')
-        self.get_logger().info('プレイヤー %s からモンスター選択のリクエストを受け取りました. ', msg.ID)
-        if msg.ID == 2:
+        self.get_logger().info('プレイヤー %s からモンスター選択のリクエストを受け取りました. '% msg.num)
+        if msg.num == 2:
             self.get_logger().info('このクライアントはプレイヤーとして登録されていないためスキップします. ')
             return 0
         else:
-            self.monster_select_ID = msg.ID
+            self.monster_select_ID = msg.num
             self.monsterAction()
 
     # def monsterSelect(self, order):
@@ -181,9 +200,9 @@ class FighterServer(Node):
 # 受付できないことをメッセージで返す. 
     def fightingSrvCb(self, request, response):
         self.get_logger().info('fightingSrvCb')
-        self.get_logger().info("プレイヤー %s から指示を受け取りました. ", request.ID)
+        self.get_logger().info("プレイヤー %s から指示を受け取りました. "% request.id)
         if self.startflg != 1:
-            response.reID = request.ID
+            response.reid = request.id
             response.res = "ゲームが開始していないため, 指示を受付できません. "
             return response
         if request.ID == 1:
@@ -274,7 +293,7 @@ class FighterServer(Node):
             self.get_logger().info("コレクト1")
             self.P1.Pname = reqName
             response.reid = 0
-            response.res = "2"#"あなたは1番目のプレイヤーとして登録されました. "
+            response.res = "1"#"あなたは1番目のプレイヤーとして登録されました. "
             return response
 
 
