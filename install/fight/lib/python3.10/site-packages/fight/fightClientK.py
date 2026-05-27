@@ -27,18 +27,20 @@ class FighterClient(Node):
         self.Areqs = [1, 2, 3]
         self.req = 0
         
+        self.readyFlg = 0
         self.startFlg = 0
         # self.request = 0
 
         self.nameCli = self.create_client(Name, 'name_srv')
         self.readyCli = self.create_client(Name, 'ready_srv')
-        self.fightCli = self.create_client(Name, 'ready_srv')
+        self.startCli = self.create_client(Name, 'start_srv')
+        self.fightingCli = self.create_client(Name, 'fighting_srv')
 
         self.monsterPublish = self.create_publisher(Num, 'monster_select', 10)
         self.monsterSelectComplete = self.create_subscription(Num, 'monsterSelectComplete', self.monsterSelectCompleteCb, 10)
 
-        self.monsterActionSv0 = ActionServer(self, Monster, 'monster_action_0', self.monsterServerCallback)
-        self.monsterActionSv1 = ActionServer(self, Monster, 'monster_action_1', self.monsterServerCallback)
+        # self.monsterActionSv0 = ActionServer(self, Monster, 'monster_action_0', self.monsterServerCallback)
+        # self.monsterActionSv1 = ActionServer(self, Monster, 'monster_action_1', self.monsterServerCallback)
 
 
 
@@ -55,7 +57,11 @@ class FighterClient(Node):
             print('----------------------------------------------------------------------------------')
             print('コマンド一覧  1:名前登録, 2:モンスター選択, 3:準備完了, 4:ゲームスタート')
             print('----------------------------------------------------------------------------------')
-            self.req = int(input())
+            self.req = input()
+            try:
+                self.req = int(self.req)
+            except ValueError:
+                self.req = -2
             if not self.req in self.Breqs: #準備フェーズ範囲外入力エラー判定
                 self.get_logger().info('入力エラー, そのリクエストはリストに含まれていません. ') 
                 self.chooseReq()          
@@ -65,10 +71,37 @@ class FighterClient(Node):
                     readID = self.ID + 1
                     self.get_logger().info('あなたはプレイヤー %d です. '% readID)
                     self.chooseReq()
-                self.nameClient()#名前登録関数呼び出し
+                    return
+                else:
+                    self.nameClient()#名前登録関数呼び出し
             elif self.req == 2:
                 if self.ID == 0 or self.ID == 1:
+                    if self.Pmonsters != []:
+                        self.get_logger().info('あなたはすでにモンスターを登録しています. 操作を続行しますか？ y/n')
+                        remonster = ''
+                        while remonster != 'y' or remonster != 'n':
+                            remonster = input()
+                            if remonster == 'y':
+                                break
+                            elif remonster == 'n':
+                                self.get_logger().info('中止します. ')
+                                self.chooseReq()
+                                return
+                            else:
+                                self.get_logger().info('想定外の入力が行われました. ')
+                    self.Pmonsters = []
                     self.monsterServerTopic()
+            elif self.req == 3:
+                if self.readyFlg == 1:
+                    self.get_logger().info('あなたはすでに準備完了しています. ')
+                    self.chooseReq()
+                    return
+                self.readyClient()
+            elif self.req == 4:
+                if self.startFlg == 1:
+                    self.chooseReq()
+                    return
+                self.startClient()
 
         else:
             print('----------------------------------------------------------------------------------')
@@ -80,7 +113,80 @@ class FighterClient(Node):
             self.req = int(input())
             if not self.req in self.Areqs:#戦闘フェーズ範囲外入力エラー判定
                 self.get_logger().info('入力エラー, そのリクエストはリストに含まれていません. ') 
-                self.chooseReq()          
+                self.chooseReq()
+                return 
+
+#準備完了サービスクライアント
+    def readyClient(self):
+        if self.Pname == "" or self.Pmonsters == []:
+            if self.Pname == "":
+                self.get_logger().info('名前が登録されていません. ')
+                self.chooseReq()
+                return
+            else:
+                self.get_logger().info('モンスターを選んでいません. ')
+                self.chooseReq()
+                return
+        while not self.readyCli.wait_for_service(timeout_sec=5.0):
+            self.get_logger().info('ready_srv サーバの応答を待っています...')
+        request = Name.Request()
+        request.id = self.ID
+
+        self.future = self.readyCli.call_async(request)
+        self.future.add_done_callback(self.readyRes_callback)
+
+    def readyRes_callback(self, future):
+        print(tilde)
+        self.get_logger().info('サーバからの結果を表示します. ')
+        res = future.result()
+        if res.res == "NP": #Not Player
+            self.get_logger().info('このクライアントはプレイヤーとして登録されていません. ')
+        elif res.res == "NMS": #Nothing Monster Select
+            self.get_logger().info('あなたはモンスターを選択していないため準備完了できません. ')
+        elif res.res == "WAP": #wait the Another Player
+            self.readyFlg = 1
+            self.get_logger().info('もう1人のプレイヤーの準備完了を待っています...')
+        elif res.res == "SA": #Start Available
+            self.readyFlg = 1
+            self.get_logger().info('両方のプレイヤーが準備完了しました. startでゲームを開始できます. ')
+        else:
+            self.get_logger().info('想定外のメッセージ')
+
+        self.chooseReq()
+#準備完了サービスクライアント
+
+#ゲームスタートサービスクライアント
+    def startClient(self):
+        if self.readyFlg == 0:
+            self.get_logger().info('あなたは準備完了していません. ')
+            self.chooseReq()
+            return
+        while not self.readyCli.wait_for_service(timeout_sec=5.0):
+            self.get_logger().info('start_srv サーバの応答を待っています...')
+        request = Name.Request()
+        request.id = self.ID
+
+        self.future = self.startCli.call_async(request)
+        self.future.add_done_callback(self.startRes_callback)
+
+    def startRes_callback(self, future):
+        print(tilde)
+        self.get_logger().info('サーバからの結果を表示します. ')
+        res = future.result()
+        if res.res == "E":
+            self.get_logger().info('相手が準備完了していないため, ゲームを開始できません. 相手の準備が完了するまでお待ちください. ')
+        elif res.res == "GS": #Game Start
+            self.startFlg = 1
+            self.get_logger().info('ゲームが開始されました！ ')
+        elif res.res == "AGS":
+            self.startFlg = 1
+            self.get_logger().info('ゲームは相手によって開始されました！ ')
+        else:
+            self.get_logger().info(' %s '% res.res)
+            self.get_logger().info('想定外のメッセージ')
+
+        self.chooseReq()
+#ゲームスタートサービスクライアント
             
 
 #名前登録サービスクライアント
@@ -113,11 +219,13 @@ class FighterClient(Node):
             self.ID = 0
             self.get_logger().info('あなたはプレイヤー1として登録されました. ')
             self.get_logger().info('あなたのプレイヤーネームは %s です. '% self.Pname)
+            self.monsterActionSv0 = ActionServer(self, Monster, 'monster_action_0', self.monsterServerCallback)
             print(tilde)
         elif res.res == "2":
             self.ID = 1
             self.get_logger().info('あなたはプレイヤー2として登録されました. ')
             self.get_logger().info('あなたのプレイヤーネームは %s です. '% self.Pname)
+            self.monsterActionSv1 = ActionServer(self, Monster, 'monster_action_1', self.monsterServerCallback)
             print(tilde)
         self.chooseReq()
 #名前登録サービスクライアント
@@ -195,27 +303,6 @@ class FighterClient(Node):
         
 #モンスター登録パブリッシャー＆アクションサーバ
 
-
-#準備完了サービスクライアント
-    def readyClient(self):
-        self.get_logger().info('準備完了のコマンドを受け取りました. ')
-        if self.Pname == '' or self.Pmonsters == []:
-            if self.Pname == '':
-                self.get_logger().info('あなたは名前を登録していません. ')
-                self.chooseReq()
-            else:
-                self.get_logger().info('あなたはモンスターを登録していません. ')
-                self.chooseReq()
-        request = Name.Request()
-        
-        request.id = self.ID
-        self.future = self.ready.call_async(request)
-        self.future.add_done_callback(self.readyRes_callback)
-    
-    def readyRes_callback(self, future):
-        self.get_logger().info('サーバに準備完了リクエストが承認されました. ')
-        self.chooseReq()
-#準備完了サービスクライアント
         
         
 
