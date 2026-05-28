@@ -72,7 +72,7 @@ class Field:
         if self.hps[S] <= 0:
             return 0
         
-        self.hpsF[F] = self.hps[F] + self.defensesP[F] - self.attacks[S]
+        self.hpsF[F] = self.hps[F] + self.defenses[F] - self.attacks[S]
         if self.hpsF[F] < self.hps[F]:
             self.hps[F] = self.hpsF[F]
         else:
@@ -179,19 +179,21 @@ class FighterServer(Node):
         self.printField()
 
         self.order = [0, 0]
-        self.printorder = [0, 0]
 
         self.field.attacksP = self.field.attacks
         self.field.defensesP = self.field.defenses
         self.field.attacks = [0, 0]
         self.field.defenses = [0, 0]
 
+        
         print("--------------------------------------------------------------------------------------")
+        print(self.printorder)
         self.printstatus()
         time.sleep(0.5)
         msg = Fighting()
         msg.pone = [self.deathflg[0], pre_P1hp, self.P1.Php, self.printorder[0]]
         msg.ptwo = [self.deathflg[1], pre_P2hp, self.P2.Php, self.printorder[1]]
+        self.printorder = [0, 0]
         self.fightingPublish.publish(msg)
         if self.deathflg[0] == 3 or self.deathflg[1] == 3:
             if self.deathflg[0] == 3:
@@ -341,7 +343,7 @@ class FighterServer(Node):
         elif request.id == 1:
             self.order[1] = 1
             if request.status[0] == 1:
-                self.printorder[1] = 0
+                self.printorder[1] = 1
                 self.field.attacks[1] = self.P1.Pattack * self.charge[1]
                 self.charge[1] = 1
             elif request.status[1] == 1:

@@ -204,8 +204,8 @@ class FighterClient(Node):
             return
 
         # msg.pone = [0(First), 1(Second), 2(Third), pre_hp, now_hp, "0(ATK) or 1(DEF) or 2(CRG)]
-        print(f"monster:{self.NoM[P1_s[0]]}, pre_HP:{P1_s[1]}, now_HP:{P1_s[2]}, order:{self.OoP[P1_s[3]]}")
-        print(f"monster:{self.NoM[P2_s[0]]}, pre_HP:{P2_s[1]}, now_HP:{P2_s[2]}, order:{self.OoP[P2_s[3]]}")
+        print(f"monster:{self.NoM[P1_s[0]]}, pre_HP:{P1_s[1]}, now_HP:{P1_s[2]}, order:{self.OoP[P1_s[3]-1]}")
+        print(f"monster:{self.NoM[P2_s[0]]}, pre_HP:{P2_s[1]}, now_HP:{P2_s[2]}, order:{self.OoP[P2_s[3]-1]}")
 
         self.chooseReq()
         return
