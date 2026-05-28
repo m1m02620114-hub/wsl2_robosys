@@ -76,7 +76,9 @@ rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: rosidl_adapter/rsysmsg/msg/Num.idl
+rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: rosidl_adapter/rsysmsg/msg/Fighting.idl
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: rosidl_adapter/rsysmsg/srv/Name.idl
+rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: rosidl_adapter/rsysmsg/srv/Fight.idl
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: rosidl_adapter/rsysmsg/action/Monster.idl
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -88,8 +90,14 @@ rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp: /opt/ros/humble/share/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp
+
 rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp
+
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp
 
 rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp
@@ -108,10 +116,24 @@ CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/ms
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.s
 
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o: rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o -MF CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o.d -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp
+
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp > CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i
+
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s
+
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o: rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o -MF CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o.d -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp
 
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.i: cmake_force
@@ -122,10 +144,24 @@ CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/sr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.s
 
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o: rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o -MF CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o.d -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp
+
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp > CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i
+
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s
+
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o: rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o -MF CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o.d -o CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp
 
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.i: cmake_force
@@ -139,14 +175,18 @@ CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/ac
 # Object files for target rsysmsg__rosidl_typesupport_cpp
 rsysmsg__rosidl_typesupport_cpp_OBJECTS = \
 "CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.o" \
+"CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o" \
 "CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o" \
+"CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o" \
 "CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o"
 
 # External object files for target rsysmsg__rosidl_typesupport_cpp
 rsysmsg__rosidl_typesupport_cpp_EXTERNAL_OBJECTS =
 
 librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.o
+librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o
 librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o
+librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o
 librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.o
 librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make
 librsysmsg__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
@@ -157,7 +197,7 @@ librsysmsg__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesupport
 librsysmsg__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librsysmsg__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librcutils.so
 librsysmsg__rosidl_typesupport_cpp.so: CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library librsysmsg__rosidl_typesupport_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library librsysmsg__rosidl_typesupport_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,7 +209,9 @@ CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/clean:
 .PHONY : CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/clean
 
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp
+CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp
 CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp
 	cd /home/rai-m/robosys/build/rsysmsg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rai-m/robosys/src/rsysmsg /home/rai-m/robosys/src/rsysmsg /home/rai-m/robosys/build/rsysmsg /home/rai-m/robosys/build/rsysmsg /home/rai-m/robosys/build/rsysmsg/CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/depend

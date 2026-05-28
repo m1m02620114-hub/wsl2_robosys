@@ -6,6 +6,8 @@ import time
 
 from rsysmsg.srv import Name
 from rsysmsg.msg import Num
+from rsysmsg.msg import Fighting
+from rsysmsg.srv import Fight
 from rsysmsg.action import Monster
 
 
@@ -90,13 +92,25 @@ class FighterServer(Node):
         self.nameSrv = self.create_service(Name, 'name_srv', self.nameSrvCb)
         self.readySrv = self.create_service(Name, 'ready_srv', self.readySrvCb)
         self.startSrv = self.create_service(Name, 'start_srv', self.startSrvCb)
-        self.fightingSrv = self.create_service(Name, 'fighting_srv', self.fightingSrvCb)
+        self.fightingSrv = self.create_service(Fight, 'fighting_srv', self.fightingSrvCb)
         
         self.startflg = 0
         self.ready = [0, 0]
         self.order = [0, 0]
+        self.printorder = [0, 0]
         self.subscription_monster = self.create_subscription(Num, 'monster_select', self.monsterCb, 10)
         self.monstercompPublish = self.create_publisher(Num, 'monsterSelectComplete', 10)
+
+        self.subscription_turn = self.create_subscription(Num, 'turn', self.turnCb, 10)
+
+        
+
+        self.fightingPublish = self.create_publisher(Fighting, 'fighting', 10)
+        
+
+        self.charge = [1, 1]
+        self.deathflg = [0, 0]
+
         self.monster_select_ID = 2
         self.pre_monsters = [[], []]
         self.action_client_monster_0 = ActionClient(self, Monster, 'monster_action_0')
@@ -113,7 +127,79 @@ class FighterServer(Node):
         print(f'Player2: name:{self.P2.Pname}, monsters:{self.P2.monsters}, hp:{self.P2.Php}, spd:{self.P2.Pspeed}, atk:{self.P2.Pattack}, def:{self.P2.Pdefense}')
         print(self.ready)
         print(self.pre_monsters)
-       
+
+    def setmonsterstatus(self, num):
+        self.P1.Php, self.P1.Pspeed = self.monsterlist[self.P1.monsters[num]]["hp"], self.monsterlist[self.P1.monsters[num]]["speed"]
+        self.P1.Pattack, self.P1.Pdefense  = self.monsterlist[self.P1.monsters[num]]["attack"], self.monsterlist[self.P1.monsters[num]]["defense"]
+            
+        self.P2.Php, self.P2.Pspeed = self.monsterlist[self.P2.monsters[num]]["hp"], self.monsterlist[self.P2.monsters[num]]["speed"]
+        self.P2.Pattack, self.P2.Pdefense  = self.monsterlist[self.P2.monsters[num]]["attack"], self.monsterlist[self.P2.monsters[num]]["defense"]
+    
+    def setMonsterStatusDead(self, Pnum, Mnum):
+        if Pnum == 0:
+            self.P1.Php, self.P1.Pspeed = self.monsterlist[self.P1.monsters[Mnum]]["hp"], self.monsterlist[self.P1.monsters[Mnum]]["speed"]
+            self.P1.Pattack, self.P1.Pdefense  = self.monsterlist[self.P1.monsters[Mnum]]["attack"], self.monsterlist[self.P1.monsters[Mnum]]["defense"]
+        if Pnum == 1:
+            self.P2.Php, self.P2.Pspeed = self.monsterlist[self.P2.monsters[Mnum]]["hp"], self.monsterlist[self.P2.monsters[Mnum]]["speed"]
+            self.P2.Pattack, self.P2.Pdefense  = self.monsterlist[self.P2.monsters[Mnum]]["attack"], self.monsterlist[self.P2.monsters[Mnum]]["defense"]
+    
+    def printField(self):
+        print(f"atks:{self.field.attacks}, pre_atks:{self.field.attacksP}, defs:{self.field.defenses}, pre_def:{self.field.defensesP}")
+        print(f"hps:{self.field.hps}, speeds:{self.field.speeds}")
+
+
+    def turnCb(self, msg):
+        self.get_logger().info('プレイヤー %d からターン処理のリクエストを受け付けました. '% msg.num)
+
+        self.printstatus()
+        #ここからHPの足し引きとかの処理をする
+
+        self.field.battle()
+
+        pre_P1hp = self.P1.Php
+        self.P1.Php = self.field.hps[0]
+        pre_P2hp = self.P2.Php
+        self.P2.Php = self.field.hps[1]
+
+        if self.P1.Php <= 0:
+            self.deathflg[0] = self.deathflg[0] + 1
+            if self.deathflg[0] <= 2:
+                self.setMonsterStatusDead(0, self.deathflg[0])
+                self.field.hps[0] = self.P1.Php
+                self.field.speeds[0] = self.P1.Pspeed
+        if self.P2.Php <= 0:
+            self.deathflg[1] = self.deathflg[1] + 1
+            if self.deathflg[1] <= 2:
+                self.setMonsterStatusDead(1, self.deathflg[1])
+                self.field.hps[1] = self.P2.Php
+                self.field.speeds[1] = self.P2.Pspeed
+
+
+        
+        self.printField()
+
+        self.order = [0, 0]
+        self.printorder = [0, 0]
+
+        self.field.attacksP = self.field.attacks
+        self.field.defensesP = self.field.defenses
+        self.field.attacks = [0, 0]
+        self.field.defenses = [0, 0]
+
+        print("--------------------------------------------------------------------------------------")
+        self.printstatus()
+        time.sleep(0.5)
+        msg = Fighting()
+        msg.pone = [self.deathflg[0], pre_P1hp, self.P1.Php, self.printorder[0]]
+        msg.ptwo = [self.deathflg[1], pre_P2hp, self.P2.Php, self.printorder[1]]
+        self.fightingPublish.publish(msg)
+        if self.deathflg[0] == 3 or self.deathflg[1] == 3:
+            if self.deathflg[0] == 3:
+                self.get_logger().info('プレイヤー2が勝利しました! ')
+                self.get_logger().info('ctrl+cで終了してください. ')
+            if self.deathflg[1] == 3:
+                self.get_logger().info('プレイヤー1が勝利しました! ')
+                self.get_logger().info('ctrl+cで終了してください. ')
 
 
 ############################################################################################################
@@ -224,9 +310,64 @@ class FighterServer(Node):
             response.reid = request.id
             response.res = "ゲームが開始していないため, 指示を受付できません. "
             return response
-        if request.ID == 1:
-            print("aaaa")
-            
+        if request.id == 0:
+            self.order[0] = 1
+            if request.status[0] == 1:
+                self.printorder[0] = 1
+                self.field.attacks[0] = self.P1.Pattack * self.charge[0]
+                self.charge[0] = 1
+            elif request.status[1] == 1:
+                self.printorder[0] = 2
+                self.field.defenses[0] = self.P1.Pdefense * self.charge[0]
+                self.charge[0] = 1
+            elif request.status[2] == 1:
+                self.printorder[0] = 3
+                self.charge[0] = 2
+
+            print("------------------------")
+            print(self.printorder)
+            print("------------------------")
+
+            if self.order == [1, 1]:
+                response.reid = request.id
+                response.res = "CC"
+                return response
+            else:
+                response.reid = request.id
+                response.res = "C"
+                return response
+
+
+        elif request.id == 1:
+            self.order[1] = 1
+            if request.status[0] == 1:
+                self.printorder[1] = 0
+                self.field.attacks[1] = self.P1.Pattack * self.charge[1]
+                self.charge[1] = 1
+            elif request.status[1] == 1:
+                self.printorder[1] = 2
+                self.field.defenses[1] = self.P1.Pdefense * self.charge[1]
+                self.charge[1] = 1
+            elif request.status[2] == 1:
+                self.printorder[1] = 3
+                self.charge[1] = 2
+
+            print("------------------------")
+            print(self.printorder)
+            print("------------------------")
+
+            if self.order == [1, 1]:
+                response.reid = request.id
+                response.res = "CC"
+                return response
+            else:
+                response.reid = request.id
+                response.res = "C"
+                return response
+        else:
+            response.reid = request.id
+            response.res = "E"
+            return response
 
 # 準備完了状況に応じてゲームを開始するか否かを判定するためのサービス通信関数
 # 両方準備完了していればfieldにプレイヤーの初期HPとスピードを反映しfightingSrvCbを受付できるようにする
@@ -243,6 +384,9 @@ class FighterServer(Node):
                 response.res = "AGS" #"ゲームは相手によって開始されました! "
                 return response
             self.startflg = 1
+
+            self.setmonsterstatus(0)
+
             self.field.speeds = [self.P1.Pspeed, self.P2.Pspeed]
             self.field.hps = [self.P1.Php, self.P2.Php]
             response.reid = request.id

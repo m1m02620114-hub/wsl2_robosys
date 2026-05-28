@@ -67,9 +67,13 @@ include CMakeFiles/rsysmsg.dir/compiler_depend.make
 include CMakeFiles/rsysmsg.dir/progress.make
 
 CMakeFiles/rsysmsg: /home/rai-m/robosys/src/rsysmsg/msg/Num.msg
+CMakeFiles/rsysmsg: /home/rai-m/robosys/src/rsysmsg/msg/Fighting.msg
 CMakeFiles/rsysmsg: /home/rai-m/robosys/src/rsysmsg/srv/Name.srv
 CMakeFiles/rsysmsg: rosidl_cmake/srv/Name_Request.msg
 CMakeFiles/rsysmsg: rosidl_cmake/srv/Name_Response.msg
+CMakeFiles/rsysmsg: /home/rai-m/robosys/src/rsysmsg/srv/Fight.srv
+CMakeFiles/rsysmsg: rosidl_cmake/srv/Fight_Request.msg
+CMakeFiles/rsysmsg: rosidl_cmake/srv/Fight_Response.msg
 CMakeFiles/rsysmsg: /home/rai-m/robosys/src/rsysmsg/action/Monster.action
 CMakeFiles/rsysmsg: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/rsysmsg: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl

@@ -4,7 +4,9 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:msg/Num.idl",
+    "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:msg/Fighting.idl",
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:srv/Name.idl",
+    "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:srv/Fight.idl",
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:action/Monster.idl"
   ],
   "ros_interface_dependencies": [
@@ -33,7 +35,9 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg/msg/Num.idl",
+    "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg/msg/Fighting.idl",
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg/srv/Name.idl",
+    "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg/srv/Fight.idl",
     "/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg/action/Monster.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",

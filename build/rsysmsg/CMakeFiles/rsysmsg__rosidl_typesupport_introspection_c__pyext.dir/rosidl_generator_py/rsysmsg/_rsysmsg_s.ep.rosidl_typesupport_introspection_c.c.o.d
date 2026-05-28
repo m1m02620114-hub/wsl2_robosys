@@ -205,11 +205,17 @@ CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generat
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/rosidl_generator_c__visibility_control.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/num__struct.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/num__functions.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__type_support.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__type_support.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__functions.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__type_support.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__struct.h \
+ /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/action/detail/monster__type_support.h \
  /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/action/detail/monster__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \

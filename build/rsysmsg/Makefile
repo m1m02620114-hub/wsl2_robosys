@@ -429,6 +429,30 @@ rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.s
 .PHONY : rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.s
 
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.o: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.o
+
+# target to build an object file
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o
+
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.i: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i
+
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.s: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s
+.PHONY : rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s
+
 rosidl_generator_c/rsysmsg/msg/detail/num__functions.o: rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.o
 .PHONY : rosidl_generator_c/rsysmsg/msg/detail/num__functions.o
 
@@ -452,6 +476,30 @@ rosidl_generator_c/rsysmsg/msg/detail/num__functions.s: rosidl_generator_c/rsysm
 rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.s
 .PHONY : rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.s
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.o: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.o
+
+# target to build an object file
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.i: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.s: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s
+.PHONY : rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s
 
 rosidl_generator_c/rsysmsg/srv/detail/name__functions.o: rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o
 .PHONY : rosidl_generator_c/rsysmsg/srv/detail/name__functions.o
@@ -573,6 +621,30 @@ rosidl_generator_py/rsysmsg/action/_monster_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/action/_monster_s.c.s
 .PHONY : rosidl_generator_py/rsysmsg/action/_monster_s.c.s
 
+rosidl_generator_py/rsysmsg/msg/_fighting_s.o: rosidl_generator_py/rsysmsg/msg/_fighting_s.c.o
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.o
+
+# target to build an object file
+rosidl_generator_py/rsysmsg/msg/_fighting_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/msg/_fighting_s.c.o
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.c.o
+
+rosidl_generator_py/rsysmsg/msg/_fighting_s.i: rosidl_generator_py/rsysmsg/msg/_fighting_s.c.i
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/rsysmsg/msg/_fighting_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/msg/_fighting_s.c.i
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.c.i
+
+rosidl_generator_py/rsysmsg/msg/_fighting_s.s: rosidl_generator_py/rsysmsg/msg/_fighting_s.c.s
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rsysmsg/msg/_fighting_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/msg/_fighting_s.c.s
+.PHONY : rosidl_generator_py/rsysmsg/msg/_fighting_s.c.s
+
 rosidl_generator_py/rsysmsg/msg/_num_s.o: rosidl_generator_py/rsysmsg/msg/_num_s.c.o
 .PHONY : rosidl_generator_py/rsysmsg/msg/_num_s.o
 
@@ -596,6 +668,30 @@ rosidl_generator_py/rsysmsg/msg/_num_s.s: rosidl_generator_py/rsysmsg/msg/_num_s
 rosidl_generator_py/rsysmsg/msg/_num_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/msg/_num_s.c.s
 .PHONY : rosidl_generator_py/rsysmsg/msg/_num_s.c.s
+
+rosidl_generator_py/rsysmsg/srv/_fight_s.o: rosidl_generator_py/rsysmsg/srv/_fight_s.c.o
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.o
+
+# target to build an object file
+rosidl_generator_py/rsysmsg/srv/_fight_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/srv/_fight_s.c.o
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.c.o
+
+rosidl_generator_py/rsysmsg/srv/_fight_s.i: rosidl_generator_py/rsysmsg/srv/_fight_s.c.i
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/rsysmsg/srv/_fight_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/srv/_fight_s.c.i
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.c.i
+
+rosidl_generator_py/rsysmsg/srv/_fight_s.s: rosidl_generator_py/rsysmsg/srv/_fight_s.c.s
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rsysmsg/srv/_fight_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_generator_py.dir/build.make CMakeFiles/rsysmsg__rosidl_generator_py.dir/rosidl_generator_py/rsysmsg/srv/_fight_s.c.s
+.PHONY : rosidl_generator_py/rsysmsg/srv/_fight_s.c.s
 
 rosidl_generator_py/rsysmsg/srv/_name_s.o: rosidl_generator_py/rsysmsg/srv/_name_s.c.o
 .PHONY : rosidl_generator_py/rsysmsg/srv/_name_s.o
@@ -645,6 +741,30 @@ rosidl_typesupport_c/rsysmsg/action/monster__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/action/monster__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/rsysmsg/action/monster__type_support.cpp.s
 
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.o: rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.o
+
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.i: rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.i
+
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.s: rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.cpp.s
+
 rosidl_typesupport_c/rsysmsg/msg/num__type_support.o: rosidl_typesupport_c/rsysmsg/msg/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/rsysmsg/msg/num__type_support.o
 
@@ -668,6 +788,30 @@ rosidl_typesupport_c/rsysmsg/msg/num__type_support.s: rosidl_typesupport_c/rsysm
 rosidl_typesupport_c/rsysmsg/msg/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/msg/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/rsysmsg/msg/num__type_support.cpp.s
+
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.o: rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.o
+
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.i: rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.i
+
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.s: rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rsysmsg/srv/fight__type_support.cpp.s
 
 rosidl_typesupport_c/rsysmsg/srv/name__type_support.o: rosidl_typesupport_c/rsysmsg/srv/name__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/rsysmsg/srv/name__type_support.o
@@ -717,6 +861,30 @@ rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.cpp.s
 
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.o: rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.o
+
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.i: rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.i
+
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.s: rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.cpp.s
+
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.o: rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.o
 
@@ -740,6 +908,30 @@ rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.s: rosidl_typesupport_cpp/r
 rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.cpp.s
+
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.o: rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.o
+
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.i: rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.i
+
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.s: rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.cpp.s
 
 rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.o: rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.o
@@ -789,6 +981,30 @@ rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.cpp.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.o: rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.i: rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.s: rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.o: rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.o
 
@@ -812,6 +1028,30 @@ rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.s: rosidl_t
 rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.o: rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.i: rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.s: rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.o: rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.o
@@ -861,6 +1101,30 @@ rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.o: rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.i: rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.s: rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.o: rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.o
 
@@ -884,6 +1148,30 @@ rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_suppor
 rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.o: rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.i: rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.s: rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.o: rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.o
@@ -933,6 +1221,30 @@ rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.c.s
 
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.o: rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.o
+
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.i: rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.i
+
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.s: rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.c.s
+
 rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.o: rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.o
 
@@ -956,6 +1268,30 @@ rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.s: rosid
 rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.c.s
+
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.o: rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.o
+
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.i: rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.i
+
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.s: rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.c.s
 
 rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.o: rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.o
@@ -1005,6 +1341,30 @@ rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.o: rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.i: rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.s: rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.o: rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.o
 
@@ -1028,6 +1388,30 @@ rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.s: ros
 rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.o: rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.i: rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.s: rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rsysmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.o: rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.o
@@ -1087,9 +1471,15 @@ help:
 	@echo "... rosidl_generator_c/rsysmsg/action/detail/monster__functions.o"
 	@echo "... rosidl_generator_c/rsysmsg/action/detail/monster__functions.i"
 	@echo "... rosidl_generator_c/rsysmsg/action/detail/monster__functions.s"
+	@echo "... rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.o"
+	@echo "... rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.i"
+	@echo "... rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.s"
 	@echo "... rosidl_generator_c/rsysmsg/msg/detail/num__functions.o"
 	@echo "... rosidl_generator_c/rsysmsg/msg/detail/num__functions.i"
 	@echo "... rosidl_generator_c/rsysmsg/msg/detail/num__functions.s"
+	@echo "... rosidl_generator_c/rsysmsg/srv/detail/fight__functions.o"
+	@echo "... rosidl_generator_c/rsysmsg/srv/detail/fight__functions.i"
+	@echo "... rosidl_generator_c/rsysmsg/srv/detail/fight__functions.s"
 	@echo "... rosidl_generator_c/rsysmsg/srv/detail/name__functions.o"
 	@echo "... rosidl_generator_c/rsysmsg/srv/detail/name__functions.i"
 	@echo "... rosidl_generator_c/rsysmsg/srv/detail/name__functions.s"
@@ -1105,63 +1495,105 @@ help:
 	@echo "... rosidl_generator_py/rsysmsg/action/_monster_s.o"
 	@echo "... rosidl_generator_py/rsysmsg/action/_monster_s.i"
 	@echo "... rosidl_generator_py/rsysmsg/action/_monster_s.s"
+	@echo "... rosidl_generator_py/rsysmsg/msg/_fighting_s.o"
+	@echo "... rosidl_generator_py/rsysmsg/msg/_fighting_s.i"
+	@echo "... rosidl_generator_py/rsysmsg/msg/_fighting_s.s"
 	@echo "... rosidl_generator_py/rsysmsg/msg/_num_s.o"
 	@echo "... rosidl_generator_py/rsysmsg/msg/_num_s.i"
 	@echo "... rosidl_generator_py/rsysmsg/msg/_num_s.s"
+	@echo "... rosidl_generator_py/rsysmsg/srv/_fight_s.o"
+	@echo "... rosidl_generator_py/rsysmsg/srv/_fight_s.i"
+	@echo "... rosidl_generator_py/rsysmsg/srv/_fight_s.s"
 	@echo "... rosidl_generator_py/rsysmsg/srv/_name_s.o"
 	@echo "... rosidl_generator_py/rsysmsg/srv/_name_s.i"
 	@echo "... rosidl_generator_py/rsysmsg/srv/_name_s.s"
 	@echo "... rosidl_typesupport_c/rsysmsg/action/monster__type_support.o"
 	@echo "... rosidl_typesupport_c/rsysmsg/action/monster__type_support.i"
 	@echo "... rosidl_typesupport_c/rsysmsg/action/monster__type_support.s"
+	@echo "... rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.o"
+	@echo "... rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.i"
+	@echo "... rosidl_typesupport_c/rsysmsg/msg/fighting__type_support.s"
 	@echo "... rosidl_typesupport_c/rsysmsg/msg/num__type_support.o"
 	@echo "... rosidl_typesupport_c/rsysmsg/msg/num__type_support.i"
 	@echo "... rosidl_typesupport_c/rsysmsg/msg/num__type_support.s"
+	@echo "... rosidl_typesupport_c/rsysmsg/srv/fight__type_support.o"
+	@echo "... rosidl_typesupport_c/rsysmsg/srv/fight__type_support.i"
+	@echo "... rosidl_typesupport_c/rsysmsg/srv/fight__type_support.s"
 	@echo "... rosidl_typesupport_c/rsysmsg/srv/name__type_support.o"
 	@echo "... rosidl_typesupport_c/rsysmsg/srv/name__type_support.i"
 	@echo "... rosidl_typesupport_c/rsysmsg/srv/name__type_support.s"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.o"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.i"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/action/monster__type_support.s"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.o"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.i"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/fighting__type_support.s"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.o"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.i"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/msg/num__type_support.s"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.o"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.i"
+	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/fight__type_support.s"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.o"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.i"
 	@echo "... rosidl_typesupport_cpp/rsysmsg/srv/name__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/action/detail/monster__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/fighting__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/msg/detail/num__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/fight__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/rsysmsg/srv/detail/name__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/action/detail/dds_fastrtps/monster__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/fighting__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/msg/detail/dds_fastrtps/num__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/fight__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/rsysmsg/srv/detail/dds_fastrtps/name__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/action/detail/monster__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/fighting__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/msg/detail/num__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/fight__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/rsysmsg/srv/detail/name__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/action/detail/monster__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/fighting__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/msg/detail/num__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/fight__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/rsysmsg/srv/detail/name__type_support.s"

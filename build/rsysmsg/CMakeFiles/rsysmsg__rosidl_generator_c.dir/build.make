@@ -83,7 +83,9 @@ rosidl_generator_c/rsysmsg/msg/num.h: /opt/ros/humble/share/rosidl_generator_c/r
 rosidl_generator_c/rsysmsg/msg/num.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/rsysmsg/msg/num.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/rsysmsg/msg/num.h: rosidl_adapter/rsysmsg/msg/Num.idl
+rosidl_generator_c/rsysmsg/msg/num.h: rosidl_adapter/rsysmsg/msg/Fighting.idl
 rosidl_generator_c/rsysmsg/msg/num.h: rosidl_adapter/rsysmsg/srv/Name.idl
+rosidl_generator_c/rsysmsg/msg/num.h: rosidl_adapter/rsysmsg/srv/Fight.idl
 rosidl_generator_c/rsysmsg/msg/num.h: rosidl_adapter/rsysmsg/action/Monster.idl
 rosidl_generator_c/rsysmsg/msg/num.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_c/rsysmsg/msg/num.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -104,6 +106,18 @@ rosidl_generator_c/rsysmsg/msg/detail/num__struct.h: rosidl_generator_c/rsysmsg/
 rosidl_generator_c/rsysmsg/msg/detail/num__type_support.h: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/num__type_support.h
 
+rosidl_generator_c/rsysmsg/msg/fighting.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/fighting.h
+
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.h
+
+rosidl_generator_c/rsysmsg/msg/detail/fighting__struct.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/fighting__struct.h
+
+rosidl_generator_c/rsysmsg/msg/detail/fighting__type_support.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/fighting__type_support.h
+
 rosidl_generator_c/rsysmsg/srv/name.h: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/name.h
 
@@ -115,6 +129,18 @@ rosidl_generator_c/rsysmsg/srv/detail/name__struct.h: rosidl_generator_c/rsysmsg
 
 rosidl_generator_c/rsysmsg/srv/detail/name__type_support.h: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/name__type_support.h
+
+rosidl_generator_c/rsysmsg/srv/fight.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/fight.h
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/fight__functions.h
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__struct.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/fight__struct.h
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__type_support.h: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/fight__type_support.h
 
 rosidl_generator_c/rsysmsg/action/monster.h: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/action/monster.h
@@ -131,8 +157,14 @@ rosidl_generator_c/rsysmsg/action/detail/monster__type_support.h: rosidl_generat
 rosidl_generator_c/rsysmsg/msg/detail/num__functions.c: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/num__functions.c
 
+rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c
+
 rosidl_generator_c/rsysmsg/srv/detail/name__functions.c: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/name__functions.c
+
+rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c: rosidl_generator_c/rsysmsg/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c
 
 rosidl_generator_c/rsysmsg/action/detail/monster__functions.c: rosidl_generator_c/rsysmsg/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rsysmsg/action/detail/monster__functions.c
@@ -151,10 +183,24 @@ CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.s
 
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/flags.make
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o -MF CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o.d -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c
+
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c > CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.i
+
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.s
+
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/flags.make
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o: rosidl_generator_c/rsysmsg/srv/detail/name__functions.c
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o -MF CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o.d -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c
 
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.i: cmake_force
@@ -165,10 +211,24 @@ CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.s
 
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/flags.make
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o -MF CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o.d -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c
+
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c > CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.i
+
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.s
+
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/flags.make
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o: rosidl_generator_c/rsysmsg/action/detail/monster__functions.c
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o: CMakeFiles/rsysmsg__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o -MF CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o.d -o CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o -c /home/rai-m/robosys/build/rsysmsg/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c
 
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.i: cmake_force
@@ -182,14 +242,18 @@ CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/det
 # Object files for target rsysmsg__rosidl_generator_c
 rsysmsg__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.o" \
+"CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o" \
 "CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o" \
+"CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o" \
 "CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o"
 
 # External object files for target rsysmsg__rosidl_generator_c
 rsysmsg__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/num__functions.c.o
+librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c.o
 librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/name__functions.c.o
+librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c.o
 librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/rosidl_generator_c/rsysmsg/action/detail/monster__functions.c.o
 librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/build.make
 librsysmsg__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
@@ -198,7 +262,7 @@ librsysmsg__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identifier_msgs
 librsysmsg__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librsysmsg__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librsysmsg__rosidl_generator_c.so: CMakeFiles/rsysmsg__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library librsysmsg__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rai-m/robosys/build/rsysmsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library librsysmsg__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rsysmsg__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -214,15 +278,25 @@ CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/ac
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/action/detail/monster__struct.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/action/detail/monster__type_support.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/action/monster.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.c
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/fighting__functions.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/fighting__struct.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/fighting__type_support.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/num__functions.c
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/num__functions.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/num__struct.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/detail/num__type_support.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/fighting.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/msg/num.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.c
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/fight__functions.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/fight__struct.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/fight__type_support.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/name__functions.c
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/name__functions.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/name__struct.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/detail/name__type_support.h
+CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/fight.h
 CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend: rosidl_generator_c/rsysmsg/srv/name.h
 	cd /home/rai-m/robosys/build/rsysmsg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rai-m/robosys/src/rsysmsg /home/rai-m/robosys/src/rsysmsg /home/rai-m/robosys/build/rsysmsg /home/rai-m/robosys/build/rsysmsg /home/rai-m/robosys/build/rsysmsg/CMakeFiles/rsysmsg__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rsysmsg__rosidl_generator_c.dir/depend

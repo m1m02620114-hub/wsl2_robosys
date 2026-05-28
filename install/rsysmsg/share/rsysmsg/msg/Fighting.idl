@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rsysmsg/msg/Fighting.msg
+// generated code does not contain a copyright notice
+
+
+module rsysmsg {
+  module msg {
+    struct Fighting {
+      sequence<int32> pone;
+
+      sequence<int32> ptwo;
+    };
+  };
+};

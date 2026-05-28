@@ -71,11 +71,21 @@ CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__builder.hp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__struct.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__traits.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__type_support.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/fighting.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__builder.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__struct.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__traits.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__type_support.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/name.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__builder.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__struct.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__traits.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__type_support.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/fight.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__builder.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__struct.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__traits.hpp
+CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__type_support.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/monster.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/detail/monster__builder.hpp
 CMakeFiles/rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/detail/monster__struct.hpp
@@ -99,7 +109,9 @@ rosidl_generator_cpp/rsysmsg/msg/num.hpp: /opt/ros/humble/share/rosidl_generator
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: rosidl_adapter/rsysmsg/msg/Num.idl
+rosidl_generator_cpp/rsysmsg/msg/num.hpp: rosidl_adapter/rsysmsg/msg/Fighting.idl
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: rosidl_adapter/rsysmsg/srv/Name.idl
+rosidl_generator_cpp/rsysmsg/msg/num.hpp: rosidl_adapter/rsysmsg/srv/Fight.idl
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: rosidl_adapter/rsysmsg/action/Monster.idl
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/rsysmsg/msg/num.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -123,6 +135,21 @@ rosidl_generator_cpp/rsysmsg/msg/detail/num__traits.hpp: rosidl_generator_cpp/rs
 rosidl_generator_cpp/rsysmsg/msg/detail/num__type_support.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/detail/num__type_support.hpp
 
+rosidl_generator_cpp/rsysmsg/msg/fighting.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/fighting.hpp
+
+rosidl_generator_cpp/rsysmsg/msg/detail/fighting__builder.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/detail/fighting__builder.hpp
+
+rosidl_generator_cpp/rsysmsg/msg/detail/fighting__struct.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/detail/fighting__struct.hpp
+
+rosidl_generator_cpp/rsysmsg/msg/detail/fighting__traits.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/detail/fighting__traits.hpp
+
+rosidl_generator_cpp/rsysmsg/msg/detail/fighting__type_support.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/msg/detail/fighting__type_support.hpp
+
 rosidl_generator_cpp/rsysmsg/srv/name.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/name.hpp
 
@@ -137,6 +164,21 @@ rosidl_generator_cpp/rsysmsg/srv/detail/name__traits.hpp: rosidl_generator_cpp/r
 
 rosidl_generator_cpp/rsysmsg/srv/detail/name__type_support.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/detail/name__type_support.hpp
+
+rosidl_generator_cpp/rsysmsg/srv/fight.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/fight.hpp
+
+rosidl_generator_cpp/rsysmsg/srv/detail/fight__builder.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/detail/fight__builder.hpp
+
+rosidl_generator_cpp/rsysmsg/srv/detail/fight__struct.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/detail/fight__struct.hpp
+
+rosidl_generator_cpp/rsysmsg/srv/detail/fight__traits.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/detail/fight__traits.hpp
+
+rosidl_generator_cpp/rsysmsg/srv/detail/fight__type_support.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/srv/detail/fight__type_support.hpp
 
 rosidl_generator_cpp/rsysmsg/action/monster.hpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rsysmsg/action/monster.hpp
@@ -159,15 +201,25 @@ rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/detail/monster__struct.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/detail/monster__traits.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/detail/monster__type_support.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/action/monster.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__builder.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__struct.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__traits.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/fighting__type_support.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__builder.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__struct.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__traits.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/detail/num__type_support.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/fighting.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/msg/num.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__builder.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__struct.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__traits.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/fight__type_support.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__builder.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__struct.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__traits.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/detail/name__type_support.hpp
+rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/fight.hpp
 rsysmsg__cpp: rosidl_generator_cpp/rsysmsg/srv/name.hpp
 rsysmsg__cpp: CMakeFiles/rsysmsg__cpp.dir/build.make
 .PHONY : rsysmsg__cpp

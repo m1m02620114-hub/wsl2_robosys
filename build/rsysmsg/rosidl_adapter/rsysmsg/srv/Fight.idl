@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rsysmsg/srv/Fight.srv
+// generated code does not contain a copyright notice
+
+
+module rsysmsg {
+  module srv {
+    struct Fight_Request {
+      sequence<int32> status;
+
+      int32 id;
+    };
+    struct Fight_Response {
+      string res;
+
+      int32 reid;
+    };
+  };
+};

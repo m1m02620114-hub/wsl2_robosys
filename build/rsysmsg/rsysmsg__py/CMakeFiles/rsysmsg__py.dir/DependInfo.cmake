@@ -18,9 +18,13 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/action/_monster.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/action/_monster_s.c" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/msg/__init__.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/msg/_fighting.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/msg/_fighting_s.c" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/msg/_num.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/msg/_num_s.c" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/srv/__init__.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/srv/_fight.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/srv/_fight_s.c" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/srv/_name.py" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/srv/_name_s.c" "/home/rai-m/robosys/build/rsysmsg/rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   )

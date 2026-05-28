@@ -70,13 +70,17 @@ rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.ro
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_introspection_c.c
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_c.c
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_num.py
+rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_fighting.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_name.py
+rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_fight.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/action/_monster.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/msg/__init__.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/srv/__init__.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/action/__init__.py
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_num_s.c
+rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_fighting_s.c
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_name_s.c
+rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_fight_s.c
 rsysmsg__py/CMakeFiles/rsysmsg__py: rosidl_generator_py/rsysmsg/action/_monster_s.c
 
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -93,7 +97,9 @@ rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rsysmsg/msg/Num.idl
+rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rsysmsg/msg/Fighting.idl
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rsysmsg/srv/Name.idl
+rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rsysmsg/srv/Fight.idl
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rsysmsg/action/Monster.idl
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -114,8 +120,14 @@ rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_c.c: rosidl_generat
 rosidl_generator_py/rsysmsg/msg/_num.py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/msg/_num.py
 
+rosidl_generator_py/rsysmsg/msg/_fighting.py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/msg/_fighting.py
+
 rosidl_generator_py/rsysmsg/srv/_name.py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/srv/_name.py
+
+rosidl_generator_py/rsysmsg/srv/_fight.py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/srv/_fight.py
 
 rosidl_generator_py/rsysmsg/action/_monster.py: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/action/_monster.py
@@ -132,8 +144,14 @@ rosidl_generator_py/rsysmsg/action/__init__.py: rosidl_generator_py/rsysmsg/_rsy
 rosidl_generator_py/rsysmsg/msg/_num_s.c: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/msg/_num_s.c
 
+rosidl_generator_py/rsysmsg/msg/_fighting_s.c: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/msg/_fighting_s.c
+
 rosidl_generator_py/rsysmsg/srv/_name_s.c: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/srv/_name_s.c
+
+rosidl_generator_py/rsysmsg/srv/_fight_s.c: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/srv/_fight_s.c
 
 rosidl_generator_py/rsysmsg/action/_monster_s.c: rosidl_generator_py/rsysmsg/_rsysmsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rsysmsg/action/_monster_s.c
@@ -145,9 +163,13 @@ rsysmsg__py: rosidl_generator_py/rsysmsg/action/__init__.py
 rsysmsg__py: rosidl_generator_py/rsysmsg/action/_monster.py
 rsysmsg__py: rosidl_generator_py/rsysmsg/action/_monster_s.c
 rsysmsg__py: rosidl_generator_py/rsysmsg/msg/__init__.py
+rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_fighting.py
+rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_fighting_s.c
 rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_num.py
 rsysmsg__py: rosidl_generator_py/rsysmsg/msg/_num_s.c
 rsysmsg__py: rosidl_generator_py/rsysmsg/srv/__init__.py
+rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_fight.py
+rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_fight_s.c
 rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_name.py
 rsysmsg__py: rosidl_generator_py/rsysmsg/srv/_name_s.c
 rsysmsg__py: rsysmsg__py/CMakeFiles/rsysmsg__py

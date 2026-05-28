@@ -7,8 +7,9 @@ from rclpy.action import ActionServer
 # from std_msgs.msg import String
 from rsysmsg.srv import Name
 # from rsysmsg.srv import Ready
-# from rsysmsg.srv import Fight
+from rsysmsg.srv import Fight
 from rsysmsg.msg import Num
+from rsysmsg.msg import Fighting
 from rsysmsg.action import Monster
 
 tilde = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -26,6 +27,8 @@ class FighterClient(Node):
         self.Breqs = [1, 2, 3, 4]
         self.Areqs = [1, 2, 3]
         self.req = 0
+        self.NoM = ["First", "Second", "Third"]
+        self.OoP = ["ATK", "DEF", "CHG"]
         
         self.readyFlg = 0
         self.startFlg = 0
@@ -34,9 +37,14 @@ class FighterClient(Node):
         self.nameCli = self.create_client(Name, 'name_srv')
         self.readyCli = self.create_client(Name, 'ready_srv')
         self.startCli = self.create_client(Name, 'start_srv')
-        self.fightingCli = self.create_client(Name, 'fighting_srv')
+        self.fightingCli = self.create_client(Fight, 'fighting_srv')
+
+        self.req_status = [0, 0, 0] #atk, def, charge
+
+        self.subscription_fighting = self.create_subscription(Fighting, 'fighting', self.fightingSub_callback, 10)
 
         self.monsterPublish = self.create_publisher(Num, 'monster_select', 10)
+        self.turnPublish = self.create_publisher(Num, 'turn', 10)
         self.monsterSelectComplete = self.create_subscription(Num, 'monsterSelectComplete', self.monsterSelectCompleteCb, 10)
 
         # self.monsterActionSv0 = ActionServer(self, Monster, 'monster_action_0', self.monsterServerCallback)
@@ -91,6 +99,10 @@ class FighterClient(Node):
                                 self.get_logger().info('想定外の入力が行われました. ')
                     self.Pmonsters = []
                     self.monsterServerTopic()
+                else:
+                    self.get_logger().info('あなたは名前を登録していません. ')
+                    self.chooseReq()
+                    return
             elif self.req == 3:
                 if self.readyFlg == 1:
                     self.get_logger().info('あなたはすでに準備完了しています. ')
@@ -107,14 +119,98 @@ class FighterClient(Node):
             print('----------------------------------------------------------------------------------')
             self.get_logger().info('現在，ゲーム開始後の戦闘フェーズです. ')
             self.get_logger().info('サーバへのリクエスト内容を選んでください. ')
+            print('プレイヤーネーム： %s ' % self.Pname)
             print('----------------------------------------------------------------------------------')
             print('コマンド一覧  1:攻撃, 2:防御, 3:溜める')
             print('----------------------------------------------------------------------------------')
-            self.req = int(input())
+            self.req = input()
+            try:
+                self.req = int(self.req)
+            except ValueError:
+                self.req = -2
             if not self.req in self.Areqs:#戦闘フェーズ範囲外入力エラー判定
                 self.get_logger().info('入力エラー, そのリクエストはリストに含まれていません. ') 
                 self.chooseReq()
-                return 
+                return
+            else:
+                self.fightingClient()
+                
+    def fightingClient(self):
+        self.get_logger().info('戦闘指示クライアントが起動しました. ')
+        
+        if self.req == 1:
+            self.req_status[0] = 1
+        elif self.req == 2:
+            self.req_status[1] = 1
+        elif self.req == 3:
+            self.req_status[2] = 1
+
+        print(self.req)
+        print(self.req_status)
+
+        while not self.readyCli.wait_for_service(timeout_sec=5.0):
+            self.get_logger().info('ready_srv サーバの応答を待っています...')
+        request = Fight.Request()
+        request.status = self.req_status
+        request.id = self.ID
+
+        self.future = self.fightingCli.call_async(request)
+        self.future.add_done_callback(self.fightingRes_callback)
+
+    def fightingRes_callback(self, future):
+        print(tilde)
+        self.get_logger().info('サーバからの結果を表示します. ')
+        
+        res = future.result()
+        if res.res == "C":
+            self.get_logger().info('攻撃指示がサーバで処理されました. 相手の行動選択をお待ちください. ')
+        elif res.res == "CC":
+            self.get_logger().info('両プレイヤーの攻撃指示がサーバで処理されました. ')
+            self.get_logger().info('ターン処理の指示をサーバに送信します... ')
+            
+            msg = Num()
+            msg.num = self.ID
+            self.turnPublish.publish(msg)
+        else:
+            self.get_logger().info('想定外のメッセージ')
+        self.req_status = [0, 0, 0]
+
+
+
+#ターン終了の合図を受け取るためのコールバック関数
+    def fightingSub_callback(self, msg):
+        self.get_logger().info('ターンが終了しました！ 結果を表示します. ')
+
+        P1_s = msg.pone
+        P2_s = msg.ptwo
+
+        print(P1_s)
+        print(P2_s)
+
+        if P1_s[0] == 3 or P2_s[0] == 3:
+            if P1_s[0] == 3:
+                self.get_logger().info('プレイヤー 2 が勝利しました！')
+                if self.ID == 1:
+                    self.get_logger().info('あなたの勝利です！')
+                else:
+                    self.get_logger().info('あなたは敗北しました...')
+            elif P2_s[0] == 3:
+                self.get_logger().info('プレイヤー 1 が勝利しました！')
+                if self.ID == 0:
+                    self.get_logger().info('あなたの勝利です！')
+                else:
+                    self.get_logger().info('あなたは敗北しました...')
+            self.get_logger().info('ctrl+cで終了してください.')
+            return
+
+        # msg.pone = [0(First), 1(Second), 2(Third), pre_hp, now_hp, "0(ATK) or 1(DEF) or 2(CRG)]
+        print(f"monster:{self.NoM[P1_s[0]]}, pre_HP:{P1_s[1]}, now_HP:{P1_s[2]}, order:{self.OoP[P1_s[3]]}")
+        print(f"monster:{self.NoM[P2_s[0]]}, pre_HP:{P2_s[1]}, now_HP:{P2_s[2]}, order:{self.OoP[P2_s[3]]}")
+
+        self.chooseReq()
+        return
+#ターン終了の合図を受け取るためのコールバック関数
+
 
 #準備完了サービスクライアント
     def readyClient(self):

@@ -1,0 +1,21 @@
+[0.016s] Invoking command in '/home/rai-m/robosys/build/rsysmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22
+[0.077s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.332s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.689s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.695s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.712s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.746s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.773s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.848s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.864s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.864s]   rosidl_generate_interfaces() the passed file 'msg/FIghting.msg' doesn't
+[0.864s]   exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.864s]   '/home/rai-m/robosys/src/rsysmsg'
+[0.864s] Call Stack (most recent call first):
+[0.865s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[0.865s] 
+[0.865s] [0m
+[0.865s] -- Configuring incomplete, errors occurred!
+[0.866s] See also "/home/rai-m/robosys/build/rsysmsg/CMakeFiles/CMakeOutput.log".
+[0.870s] gmake: *** [Makefile:1179: cmake_check_build_system] Error 1
+[0.876s] Invoked command in '/home/rai-m/robosys/build/rsysmsg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rai-m/robosys/install/fight:/home/rai-m/mlr01_ws/install/lp01:/home/rai-m/test1_ws/install/robo02:/home/rai-m/test1_ws/install/robo01:/home/rai-m/test1_ws/install/py_pubsub:/home/rai-m/test1_ws/install/my_package2:/home/rai-m/test1_ws/install/my_package:/home/rai-m/test1_ws/install/multi01:/opt/ros/humble /usr/bin/cmake --build /home/rai-m/robosys/build/rsysmsg -- -j22 -l22

@@ -2,7 +2,9 @@
   "package_name": "rsysmsg",
   "non_idl_tuples": [
     "/home/rai-m/robosys/src/rsysmsg:msg/Num.msg",
+    "/home/rai-m/robosys/src/rsysmsg:msg/Fighting.msg",
     "/home/rai-m/robosys/src/rsysmsg:srv/Name.srv",
+    "/home/rai-m/robosys/src/rsysmsg:srv/Fight.srv",
     "/home/rai-m/robosys/src/rsysmsg:action/Monster.action"
   ]
 }

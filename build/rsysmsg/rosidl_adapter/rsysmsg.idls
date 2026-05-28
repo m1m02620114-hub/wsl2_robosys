@@ -1,3 +1,5 @@
 /home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:msg/Num.idl
+/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:msg/Fighting.idl
 /home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:srv/Name.idl
+/home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:srv/Fight.idl
 /home/rai-m/robosys/build/rsysmsg/rosidl_adapter/rsysmsg:action/Monster.idl
